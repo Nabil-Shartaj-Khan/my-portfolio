@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,14 +19,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Myself</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand text-primary" href="#experience"> <i class="bi bi-pencil"></i>  Experiences</a>
+        <a class="navbar-brand text-primary" href="#intro">My portfolio</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,19 +48,15 @@
               <a
                 class="nav-link active text-primary"
                 aria-current="page"
-                href="index.html"
+                href="#"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="index.html#skills"
-                >Skills</a
-              >
+              <a class="nav-link text-primary" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="index.html#education"
-                >Education</a
-              >
+              <a class="nav-link text-primary" href="#education">Education</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -73,7 +71,12 @@
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item text-primary" href="myself.html"
-                    >About me</a
+                    >About myself</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-primary" href="experience.html"
+                    >Experience</a
                   >
                 </li>
                 <li>
@@ -92,39 +95,53 @@
         </div>
       </div>
     </nav>
-      <div class="container pt-3">
-        <div class="one-exp py-3 px-4 shadow-lg py-4">
-          <h2 class="text-primary">Full-Stack web developing</h2>
-          <h5>January 2020-Current</h5>
-          <h6>Self-taught</h6>
-          <p class="lead">
-            As a self-taught web developer, I've learned a bunch of cool skills to make websites look good and work smoothly. I started with HTML and CSS for the basics, then added Bootstrap and Tailwind CSS to make things stylish. I got into React to create interactive parts of websites. On the behind-the-scenes part, I learned Express.js, PHP, and Node.js to handle the server stuff. I also dealt with databases using MySQL and MongoDB. For live chatting and updates on websites, I picked up Socket.IO. Right now, I'm learning Next.js to make things even better. This journey shows I'm committed to learning and keeping up with what's new in web development. While learning, whatever i learned, implemented that in real time and showcased in my <a href="https://github.com/Nabil-Shartaj-Khan?tab=repositories" target="_blank">Github Repos.</a> I furthermore, created projects where i had to demonstrate and use relevant skills for example-, CRUD, Login with JWT token, Database operations etc.
-          </p>
-        </div>
 
+    <div class="container pt-3">
+      <div class="one-exp py-3 px-4 shadow-lg py-4">
+        <h2 class="text-primary">Full-Stack web developing</h2>
+        <h5>January 2020-Current</h5>
+        <h6>Self-taught</h6>
+        <p class="lead">
+          As a self-taught web developer, I've learned a bunch of cool skills to
+          make websites look good and work smoothly. I started with HTML and CSS
+          for the basics, then added Bootstrap and Tailwind CSS to make things
+          stylish. I got into React to create interactive parts of websites. On
+          the behind-the-scenes part, I learned Express.js, PHP, and Node.js to
+          handle the server stuff. I also dealt with databases using MySQL and
+          MongoDB. For live chatting and updates on websites, I picked up
+          Socket.IO. Right now, I'm learning Next.js to make things even better.
+          This journey shows I'm committed to learning and keeping up with
+          what's new in web development. While learning, whatever I learned,
+          implemented that in real-time and showcased in my
+          <a
+            href="https://github.com/Nabil-Shartaj-Khan?tab=repositories"
+            target="_blank"
+            >Github Repos.</a
+          >
+          I furthermore, created projects where I had to demonstrate and use
+          relevant skills, for example, CRUD, Login with JWT token, Database
+          operations etc.
+        </p>
+      </div>
 
-          <div class="two-exp py-3 px-4 shadow-lg">
-            <h2 class="text-primary">English to Bengali translator</h2>
-            <h5>March 2022-November 2023</h5>
-            <h6>Upwork</h6>
-            <p class="lead">
-              I joined UPWORK in search of testing my skills and also as my side-hustle. I started working
-              as a translator (Bengali to English and vice versa) and also as a
-              transcriptionist. As my reading, writing and listening skills are
-              good enough, I chose these two as my head start job. Even though,
-              it’s been a year only, I am sure of my skills and I’ll make sure
-              my client realized and realizes the same.
-            </p>
-          </div>
-
-
-
+      <div class="two-exp py-3 px-4 shadow-lg">
+        <h2 class="text-primary">English to Bengali translator</h2>
+        <h5>March 2022-November 2023</h5>
+        <h6>Upwork</h6>
+        <p class="lead">
+          I joined UPWORK in search of testing my skills and also as my
+          side-hustle. I started working as a translator (Bengali to English and
+          vice versa) and also as a transcriptionist. As my reading, writing and
+          listening skills are good enough, I chose these two as my head start
+          job. Even though, it’s been a year only, I am sure of my skills and
+          I’ll make sure my client realized and realizes the same.
+        </p>
       </div>
     </div>
-  <br>    
+
     <div class="container">
       <footer class="py-2 my-2 d-grid pt-5 mt-5">
-        <hr>
+        <hr />
         <ul class="nav justify-content-center border-bottom pb-3 mb-3 col-12">
           <li class="nav-item">
             <a href="index.html" class="nav-link px-2 text-muted">Home</a>
@@ -148,15 +165,16 @@
             >
           </li>
         </ul>
-        <button class="btn btn-success col-2" id="back-to-top">
+        <button class="btn btn-success col-12 col-md-2" id="back-to-top">
           Back to top
         </button>
         <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
         <span id="access-date" class="text-center text-muted"
-        >Website accessed on:
-      </span>
+          >Website accessed on:</span
+        >
       </footer>
     </div>
+
     <script>
       document
         .getElementById("back-to-top")
@@ -181,8 +199,8 @@
 
       document.getElementById("access-date").textContent +=
         formatDate(currentDate);
-        
     </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
