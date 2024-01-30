@@ -202,15 +202,7 @@
       });
     });
 
-    document.onreadystatechange = function () {
-      if (document.readyState === "loading") {
 
-          document.getElementById("loading-icon").style.visibility = "visible";
-      } else {
-
-          document.getElementById("loading-icon").style.visibility = "hidden";
-      }
-  };
 
   function formatDate(date) {
     const year = date.getFullYear();
