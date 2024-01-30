@@ -188,7 +188,7 @@
       </button>
       <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
       <span id="access-date" class="text-center text-muted"
-      >Website accessed on:
+      >Webpage accessed on:
     </span>
     </footer>
   </div>
@@ -201,6 +201,16 @@
         behavior: "smooth",
       });
     });
+
+    document.onreadystatechange = function () {
+      if (document.readyState === "loading") {
+
+          document.getElementById("loading-icon").style.visibility = "visible";
+      } else {
+
+          document.getElementById("loading-icon").style.visibility = "hidden";
+      }
+  };
 
   function formatDate(date) {
     const year = date.getFullYear();
