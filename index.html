@@ -10,13 +10,26 @@
     />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Standard Favicon -->
+    <link rel="icon" href="./assets/logo.png" type="image/png" sizes="32x32" />
+
+    <!-- Apple Touch Icon (iPhone, iPad, iPod) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+
+    <!-- Android Chrome Icon (Android devices) -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/logo.png"
+    />
+
+    <meta name="msapplication-TileImage" content="./assets/logo.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <script async src="https://cdn.splitbee.io/sb.js"></script>
     <title>Welcome to my portfolio</title>
   </head>
   <body>
-    <div id="loading-icon">
-      <img src="./assets/loading.gif" alt="Loading icon" />
-    </div>
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
     >
@@ -192,10 +205,11 @@
         <div class="text-center p-3">
           <h3 class="py-3 display-4 text-primary p-3">Skills and Expertise</h3>
           <p class="text-dark lead pb-4">
-            I have been interested in learning about web development since i was
-            a kid. I was always eager to know and test how frontend, backend and
-            database connects and works simultaneously. List of my skills
-            regarding web development and other expertise are as follows-
+            From a young age, my curiosity about web development has been a
+            driving force in my journey. I am passionate about understanding the
+            intricate connections between frontend, backend, and databases, and
+            I continually strive to stay at the forefront of technology. Here's
+            a glimpse into my skills and expertise in web development:
           </p>
 
           <div class="accordion accordion-flush" id="accordionExample">
@@ -559,7 +573,7 @@
         </button>
         <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
         <span id="access-date" class="text-center text-muted"
-          >Webpage accessed on:
+          >Webpage access date:
         </span>
       </footer>
     </div>
@@ -572,22 +586,23 @@
             behavior: "smooth",
           });
         });
-      document.onreadystatechange = function () {
-        if (document.readyState === "loading") {
-          document.getElementById("loading-icon").style.visibility = "visible";
-        } else {
-          document.getElementById("loading-icon").style.visibility = "hidden";
-        }
-      };
 
       function formatDate(date) {
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, "0");
         const day = String(date.getDate()).padStart(2, "0");
-        const hours = String(date.getHours()).padStart(2, "0");
+        let hours = date.getHours();
         const minutes = String(date.getMinutes()).padStart(2, "0");
         const seconds = String(date.getSeconds()).padStart(2, "0");
-        return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+
+        let period = "AM";
+
+        if (hours >= 12) {
+          period = "PM";
+          hours = hours % 12 || 12;
+        }
+
+        return `${year}-${month}-${day} at ${hours}:${minutes}:${seconds} ${period}`;
       }
 
       const currentDate = new Date();

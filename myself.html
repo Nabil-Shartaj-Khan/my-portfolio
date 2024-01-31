@@ -20,6 +20,22 @@
   />
     
     <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Standard Favicon -->
+        <link rel="icon" href="./assets/logo.png" type="image/png" sizes="32x32" />
+
+        <!-- Apple Touch Icon (iPhone, iPad, iPod) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+    
+        <!-- Android Chrome Icon (Android devices) -->
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="./assets/logo.png"
+        />
+    
+        <meta name="msapplication-TileImage" content="./assets/logo.png" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
     <title>About me</title>
   </head>
   <body>
@@ -146,6 +162,7 @@
                               <button class="btn btn-outline-primary">Download CV</button>
                             </a>
                           </div> <br>
+                          <p class="bye">
                           Please don't hesitate to <a href="contact.html" style="text-decoration: none;">contact</a> me and I am looking forward to working with you! <br>
                           Best regards!</p>
                           <span class="text-primary fw-bold">Nabil Shartaj Khan</span>
@@ -188,7 +205,7 @@
       </button>
       <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
       <span id="access-date" class="text-center text-muted"
-      >Webpage accessed on:
+      >Webpage access date:
     </span>
     </footer>
   </div>
@@ -204,15 +221,23 @@
 
 
 
-  function formatDate(date) {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, "0");
-    const day = String(date.getDate()).padStart(2, "0");
-    const hours = String(date.getHours()).padStart(2, "0");
-    const minutes = String(date.getMinutes()).padStart(2, "0");
-    const seconds = String(date.getSeconds()).padStart(2, "0");
-    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-  }
+    function formatDate(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      let hours = date.getHours();
+      const minutes = String(date.getMinutes()).padStart(2, "0");
+      const seconds = String(date.getSeconds()).padStart(2, "0");
+    
+      let period = "AM";
+      
+      if (hours >= 12) {
+        period = "PM";
+        hours = (hours % 12) || 12; 
+      }
+    
+      return `${year}-${month}-${day} at ${hours}:${minutes}:${seconds} ${period}`;
+    }
 
   const currentDate = new Date();
 
