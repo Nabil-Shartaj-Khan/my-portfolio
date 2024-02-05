@@ -32,6 +32,7 @@
     <title>Project Page</title>
   </head>
   <body>
+    <div id="preloader"></div>
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
     >
@@ -376,6 +377,13 @@
         
         document.getElementById("access-date").textContent +=
         formatDate(currentDate);
+    </script>
+    <script>
+      var loader=document.getElementById("preloader");
+      window.addEventListener("load",function(){
+        loader.style.display="none";
+        
+      })
     </script>
 
     <script

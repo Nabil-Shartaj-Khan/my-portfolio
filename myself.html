@@ -39,6 +39,7 @@
     <title>About me</title>
   </head>
   <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand text-primary" href="#quote">About me</a>
@@ -250,5 +251,12 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader=document.getElementById("preloader");
+      window.addEventListener("load",function(){
+        loader.style.display="none";
+        
+      })
+    </script>
   </body>
 </html>
