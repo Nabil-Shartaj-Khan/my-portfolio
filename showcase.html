@@ -1,0 +1,484 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Standard Favicon -->
+    <link rel="icon" href="./assets/logo.png" type="image/png" sizes="32x32" />
+
+    <!-- Apple Touch Icon (iPhone, iPad, iPod) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+
+    <!-- Android Chrome Icon (Android devices) -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/logo.png"
+    />
+
+    <meta name="msapplication-TileImage" content="./assets/logo.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <title>Project Page</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="#project">Projects</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end pe-5"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="index.html#skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="index.html#education"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-primary"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Others
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-primary" href="experience.html"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-primary" href="contact.html"
+                    >Contact me</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-primary" href="myself.html"
+                    >About me</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="cardview">
+      <div class="container">
+        <h3 class="display-5 text-primary text-center pb-5 mt-4 pt-5">
+          All the projects i've worked on till now
+        </h3>
+
+        <div class="row justify-content-around">
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/clock.PNG"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">JS small projects</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center pt-3">
+                Various small projects demonstrating JavaScript skills
+              </h6>
+              <p class="card-text pt-4">
+                Projects like calculator, image slider, BMI calculator, Clock
+                using vanilla JavaScript.
+              </p>
+              <p class="card-text fw-bold">HTML, CSS and JavaScript</p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/Javascript--small-projects"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Repo Link</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/no.jpg"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                ✈Airline management system✈
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center">
+                your flying assistant
+              </h6>
+              <p class="card-text">
+                A project which includes two types of users, admin and normal
+                user. Admin can add flight details and user can search flights
+                and check out the schedule. Booking feature to be added later.
+                Database is needed.
+              </p>
+              <p class="card-text fw-bold">
+                HTML, CSS, TypeScript, ReactJS, NestJS and MySQL
+              </p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/airport-management-frontend"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Front End</a
+              >
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/aiport-management-backend"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Back End</a
+              >
+            </div>
+          </div>
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/no.jpg"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">PHP login feature</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center">
+                Admin user login functionality
+              </h6>
+              <p class="card-text">
+                Login feature in PHP where user and admin is present. User have
+                to register and login to view his profile page and can edit his
+                profile only. Admin can login using a secret code and add other
+                users as well as edit them. Database is needed as user's
+                password will be checked and stored users will be shown based on
+                the database.
+              </p>
+              <p class="card-text fw-bold text-center">HTML, PHP and MySQL.</p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/PHP_advanced_topics"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Repo Link</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/no.jpg"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">📣Chatting Site📢</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center">
+                Real time chatting in two screens
+              </h6>
+              <p class="card-text">
+                A simple chatting site where two users by creating two screens
+                can chat real time by having random usernames while texting.
+              </p>
+              <p class="card-text fw-bold text-center">
+                HTML, Bootstrap, Socket IO and Express JS.
+              </p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/SocketIO-chatting-app"
+                target="_blank"
+                class="card-link btn btn-primary mt-4"
+                >Repo Link</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/todo.JPG"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">To-do app</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center">
+                Add, edit, delete and move!
+              </h6>
+              <p class="card-text">
+                A to-do app where users can add, edit, and delete tasks. For
+                prioritizing, the user has to select priority and then input the
+                tasks. Furthermore, user can mark the task done and it will
+                appear in a separate section. It was deployed, so live link is
+                available.
+              </p>
+              <p class="card-text fw-bold">HTML, CSS, ReactJS and Bootstrap.</p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/To-do-work-project"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Repo Link</a
+              >
+              <a
+                href="https://to-do-work-project.vercel.app/"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Live Link</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/student.png"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Student Management System</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center py-2">
+                Manage students as admin and manage courses as student.
+              </h6>
+              <p class="card-text">
+                General features include, user and admin login, CRUD (Create,
+                Read, Update and Delete) operations and JWT authentication. User
+                or student can user can login via JWT token, edit his profile,
+                view all the available courses and book them. Furthermore,
+                course details can also be viewed. As an Admin, he can login
+                with admin credentials via JWT token and also can create, view,
+                update and delete all the available students and courses.
+              </p>
+              <p class="card-text fw-bold">
+                HTML, CSS, ReactJS , Bootstrap, NodeJS, ExpressJS and MySQL.
+              </p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/Student-Management-System"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Repo Link</a
+              >
+            </div>
+          </div>
+
+          <!-- ************************ -->
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/reactproject.JPG"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">React Projects</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center">
+                React projects for react demonstration from frontendval
+              </h6>
+              <p class="card-text">
+                I tried to demonstrate my react skills by doing these projects
+                which includes projects like,Countdown timer project, FAQ
+                component, EMI calculator, Custom Modal for now. I am currently
+                working on this and looking forward to add more projects which
+                can be tracked in my Github repo.
+              </p>
+              <p class="card-text fw-bold text-center">
+                HTML, CSS, Bootstrap and React.
+              </p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/React-challenges"
+                target="_blank"
+                class="card-link btn btn-primary"
+                >Repo Link</a
+              >
+            </div>
+          </div>
+          <!-- *************************** -->
+          <div
+            class="card shadow-lg border border-3 pt-3 col-md-4 ms-4 mt-5 mb-5"
+            style="width: 20rem"
+          >
+            <img
+              class="card-img-top"
+              src="./assets/skin.JPG"
+              style="height: 150px; width: auto"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Skin care clinic website</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-1 text-center">
+                Full stack website for a skin care clinic
+              </h6>
+              <p class="card-text">
+                A full stack skin care clinic website which allows user to
+                signup and login in order to book appointment.
+              </p>
+              <p class="card-text fw-bold text-center">
+                React.js, Bootstrap, Express.js, Node.js and MySQL
+              </p>
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/skin-care-website"
+                target="_blank"
+                class="card-link btn btn-primary mt-5"
+                >Repo Link</a
+              >
+            </div>
+          </div>
+          <p class="fs-5 pb-4">
+            Furthermore, I love to note while i am learning and also create
+            small functionalities based on them. My walkthrough of learning a
+            language and related testing can also be found in my
+            <a
+              href="https://github.com/Nabil-Shartaj-Khan?tab=repositories"
+              target="_blank"
+            >
+              Github Repository</a
+            >
+            list.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <div class="container">
+      <footer class="py-2 my-2 d-grid">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 col-12">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="myself.html" class="nav-link px-2 text-muted">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="experience.html" class="nav-link px-2 text-muted"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link px-2 text-muted"
+              >Contact me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="showcase.html" class="nav-link px-2 text-muted"
+              >Projects</a
+            >
+          </li>
+        </ul>
+        <button class="btn btn-success col-2" id="back-to-top">
+          Back to top
+        </button>
+        <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
+        <span id="access-date" class="text-center text-muted"
+          >Webpage access date:
+        </span>
+      </footer>
+    </div>
+    <script>
+      document
+        .getElementById("back-to-top")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+      function formatDate(date) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        let hours = date.getHours();
+        const minutes = String(date.getMinutes()).padStart(2, "0");
+        const seconds = String(date.getSeconds()).padStart(2, "0");
+
+        let period = "AM";
+
+        if (hours >= 12) {
+          period = "PM";
+          hours = hours % 12 || 12;
+        }
+
+        return `${year}-${month}-${day} at ${hours}:${minutes}:${seconds} ${period}`;
+      }
+
+      const currentDate = new Date();
+
+      document.getElementById("access-date").textContent +=
+        formatDate(currentDate);
+    </script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
