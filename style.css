@@ -10,7 +10,7 @@
 }
 
 .navbar-nav .nav-item a {
-  font-size: 18px; /* Adjust the font size to your preference */
+  font-size: 18px; 
 }
 
 .card:hover{
@@ -87,3 +87,6 @@ body {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
+
+.contact-me-section { padding: 50px; margin: 50px 10% 0; }
