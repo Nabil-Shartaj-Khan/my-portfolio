@@ -92,5 +92,23 @@ body {
   margin-bottom: 30px;
 }
 
+#about .mb-3 span {
+  font-size: 1.2rem;
+  color: #2d2b2a;        /* A bold, warm orange */
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+#about .mb-3 span:hover {
+  color: #e64a19;        /* Darker orange on hover for some interactivity */
+  cursor: pointer;
+}
+
+
 
 .contact-me-section { padding: 50px; margin: 50px 10% 0; }
