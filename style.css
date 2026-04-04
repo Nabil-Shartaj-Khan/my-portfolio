@@ -45,7 +45,16 @@ h2,h3{
 }
 
 
+.skill-card ul {
+  padding-left: 20px; /* adds space for bullets */
+}
 
+.skill-card ul li {
+  list-style-type: disc; /* standard bullet */
+  padding: 4px 0;
+  font-size: 1rem;
+  color: #4b4b4b;
+}
 #edit-about{
   background-color:aliceblue;
 }
