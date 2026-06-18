@@ -105,249 +105,360 @@
       </div>
     </nav>
 
+    <style>
+      .projects-hero {
+        background: linear-gradient(135deg, #f8fff9, #ffffff);
+        border: 1px solid #e6f2ea;
+        border-radius: 22px;
+        padding: 40px 26px;
+        margin-top: 72px;
+      }
+
+      .section-label {
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #198754;
+        font-weight: 700;
+      }
+
+      .project-section {
+        margin-top: 56px;
+      }
+
+      .project-card {
+        border: 1px solid #e9ecef;
+        border-radius: 18px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .project-tag {
+        display: inline-block;
+        background-color: #e9f7ef;
+        color: #198754;
+        border-radius: 999px;
+        padding: 5px 12px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .learn-list {
+        padding-left: 18px;
+        margin-bottom: 0;
+      }
+
+      .learn-list li {
+        margin-bottom: 6px;
+      }
+
+      .tech-text {
+        font-size: 0.95rem;
+      }
+
+      .project-actions {
+        margin-top: auto;
+        padding-top: 16px;
+      }
+    </style>
+
     <section id="projects" class="container py-5">
-      <h2 class="text-success border-bottom pb-2 mt-5 mb-4">
-        Fullstack Projects
-      </h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Student Management System</h5>
-              <p class="card-text">
-                JWT auth, CRUD students/courses, roles user/admin<br />
-                <strong>Tech:</strong> ReactJS, NodeJS, ExpressJS, MySQL
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/Student-Management-System"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >GitHub Repo</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">
-                BlogNestx2 (Real-Time Full-Stack Blogging Platform)
-              </h5>
-              <p class="card-text">
-                Real-time blogging platform with user auth, post subscriptions,
-                and live notifications.<br />
-                <strong>Tech:</strong> React.js, Express.js, MongoDB, Socket.io,
-                Passport.js
-              </p>
+      <div class="projects-hero">
+        <h1 class="text-dark mt-2 mb-3 text-center">Projects I Built and What I Learned</h1>
+      </div>
 
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/BlogNestx2"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >GitHub Repo</a
-              >
+      <div class="project-section">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
+          <h2 class="text-success mb-0">Fullstack Projects</h2>
+          <span class="text-muted">5 Projects</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">Fullstack</span>
+                <h5 class="card-title text-dark">Student Management System</h5>
+                <p class="card-text">
+                  A student and course management system with JWT authentication, CRUD features,
+                  and separate user/admin roles.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> ReactJS, NodeJS, ExpressJS, MySQL</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How to build login and protected routes with JWT.</li>
+                  <li>How to connect frontend forms with backend APIs.</li>
+                  <li>How role-based access works for admin and normal users.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/Student-Management-System" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Airline Management System</h5>
-              <p class="card-text">
-                Admin/user roles, booking system (planned)<br />
-                <strong>Tech:</strong> TypeScript, ReactJS, NestJS, MySQL
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/airport-management-frontend"
-                target="_blank"
-                class="btn btn-outline-dark me-2"
-                >Frontend</a
-              >
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/aiport-management-backend"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >Backend</a
-              >
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">Real-time Fullstack</span>
+                <h5 class="card-title text-dark">BlogNestx2 (Real-Time Full-Stack Blogging Platform)</h5>
+                <p class="card-text">
+                  A blogging platform with user authentication, post subscriptions, and live notifications.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> React.js, Express.js, MongoDB, Socket.io, Passport.js</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How real-time notifications work using Socket.io.</li>
+                  <li>How to manage users, posts, and subscriptions.</li>
+                  <li>How MongoDB stores flexible blog content.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/BlogNestx2" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Skin Care Clinic</h5>
-              <p class="card-text">
-                Sign up, login, appointment booking<br />
-                <strong>Tech:</strong> React.js, Bootstrap, Express.js, MySQL
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/skin-care-website"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >GitHub Repo</a
-              >
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">Fullstack</span>
+                <h5 class="card-title text-dark">Airline Management System</h5>
+                <p class="card-text">
+                  An airline management system with admin/user roles and a planned booking system.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> TypeScript, ReactJS, NestJS, MySQL</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How TypeScript improves structure in larger projects.</li>
+                  <li>How NestJS separates controllers, services, and modules.</li>
+                  <li>How booking logic can be planned before full development.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/airport-management-frontend" target="_blank" class="btn btn-outline-dark me-2">Frontend</a>
+                  <a href="https://github.com/Nabil-Shartaj-Khan/aiport-management-backend" target="_blank" class="btn btn-outline-dark">Backend</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-                        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">RephraseAI - Smart Text Rewriter</h5>
-              <p class="card-text">
-                RephraseAI is a web app that rewrites your messages in friendly, professional, or concise tones using AI. It keeps a history of past messages and lets you easily copy any rewrite.<br />
-                <strong>Tech: </strong>React, Material-UI (MUI),Node.js, Express.js and ApiFreeLLM (free LLM API) 
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/RephraseAI"
-                target="_blank"
-                class="btn btn-outline-dark me-2"
-                >GitHub</a
-              >
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">Fullstack</span>
+                <h5 class="card-title text-dark">Skin Care Clinic</h5>
+                <p class="card-text">
+                  A clinic website with sign up, login, and appointment booking features.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> React.js, Bootstrap, Express.js, MySQL</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How to design booking flows for users.</li>
+                  <li>How to store appointment data in a database.</li>
+                  <li>How Bootstrap helps build clean responsive pages.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/skin-care-website" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">AI Web App</span>
+                <h5 class="card-title text-dark">RephraseAI - Smart Text Rewriter</h5>
+                <p class="card-text">
+                  A web app that rewrites messages in friendly, professional, or concise tones using AI.
+                  It keeps message history and allows quick copying.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> React, Material-UI, Node.js, Express.js, ApiFreeLLM</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How to connect an AI API with a frontend app.</li>
+                  <li>How to manage message history in the interface.</li>
+                  <li>How tone options improve user experience.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/RephraseAI" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      
-      <h2 class="text-success border-bottom pb-2 mt-5 mb-4">
-        Frontend only Projects (React/Bootstrap)
-      </h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">React Projects</h5>
-              <p class="card-text">
-                Countdown timer, FAQ, EMI calculator, Custom Modal<br />
-                <strong>Tech: </strong>Bootstrap5, React
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/React-challenges"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >GitHub Repo</a
-              >
+      <div class="project-section">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
+          <h2 class="text-success mb-0">Frontend only Projects (React/Bootstrap)</h2>
+          <span class="text-muted">3 Projects</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">React Practice</span>
+                <h5 class="card-title text-dark">React Projects</h5>
+                <p class="card-text">
+                  A collection of small React projects including countdown timer, FAQ, EMI calculator, and custom modal.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> Bootstrap5, React</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How React components can be reused.</li>
+                  <li>How state changes update the user interface.</li>
+                  <li>How small projects improve frontend logic.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/React-challenges" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">To-do App</h5>
-              <p class="card-text">
-                Add, edit, delete, mark done, prioritize tasks<br />
-                <strong>Tech: </strong>ReactJS, Bootstrap5
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/To-do-work-project"
-                target="_blank"
-                class="btn btn-outline-dark me-2"
-                >GitHub</a
-              >
-              <a
-                href="https://to-do-work-project.vercel.app/"
-                target="_blank"
-                class="btn btn-outline-success"
-                >Live Demo</a
-              >
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">Task App</span>
+                <h5 class="card-title text-dark">To-do App</h5>
+                <p class="card-text">
+                  A task management app where users can add, edit, delete, mark done, and prioritize tasks.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> ReactJS, Bootstrap5</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How to manage lists using React state.</li>
+                  <li>How edit and delete actions affect stored data.</li>
+                  <li>How to make simple apps easier to use.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/To-do-work-project" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
+                  <a href="https://to-do-work-project.vercel.app/" target="_blank" class="btn btn-outline-success">Live Demo</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- **********NEW PROJECT*********** -->
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">SoulSync-Personal Reminder App</h5>
-              <p class="card-text">
-                A minimalist Progressive Web React app to track quizzes, assignments, and exams with local storage and calendar view.<br />
-                <strong>Tech: </strong>ReactJS, Bootstrap5
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/Note-Site"
-                target="_blank"
-                class="btn btn-outline-dark me-2"
-                >GitHub</a
-              >
-              <a
-                href="https://note-site-lovey.vercel.app/"
-                target="_blank"
-                class="btn btn-outline-success"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- **************NEW PROJECT*********** --> 
 
-
-
-        <!-- new project end here -->
-      </div>
-      <h2 class="text-success border-bottom pb-2 mb-4 mt-3">
-        Basic / Vanilla JS Projects
-      </h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-lg">
-            <div class="card-body">
-              <h5 class="card-title text-dark">JS Small Projects</h5>
-              <p class="card-text">
-                Calculator, image slider, BMI calculator, Clock<br />
-                <strong>Tech:</strong> HTML, CSS, JavaScript
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/Javascript--small-projects"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >GitHub Repo</a
-              >
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">PWA</span>
+                <h5 class="card-title text-dark">SoulSync-Personal Reminder App</h5>
+                <p class="card-text">
+                  A minimalist Progressive Web React app to track quizzes, assignments, and exams with local storage and calendar view.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> ReactJS, Bootstrap5</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How local storage keeps user data in the browser.</li>
+                  <li>How calendar views help organise deadlines.</li>
+                  <li>How PWA-style apps can feel close to mobile apps.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/Note-Site" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
+                  <a href="https://note-site-lovey.vercel.app/" target="_blank" class="btn btn-outline-success">Live Demo</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="project-section">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
+          <h2 class="text-success mb-0">Basic / Vanilla JS Projects</h2>
+          <span class="text-muted">1 Project</span>
+        </div>
 
-      <h2 class="text-success border-bottom pb-2 mt-5 mb-4">
-        Backend / PHP Projects
-      </h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">PHP Login Feature</h5>
-              <p class="card-text">
-                Admin/user login, profile edit, password handling<br />
-                <strong>Tech:</strong> HTML, PHP, MySQL
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/PHP_advanced_topics"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >GitHub Repo</a
-              >
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">JavaScript</span>
+                <h5 class="card-title text-dark">JS Small Projects</h5>
+                <p class="card-text">
+                  A set of small JavaScript projects including calculator, image slider, BMI calculator, and clock.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How DOM selection and event listeners work.</li>
+                  <li>How JavaScript changes page content.</li>
+                  <li>How small logic-based projects build confidence.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/Javascript--small-projects" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <h2 class="text-success border-bottom pb-2 mt-5 mb-4">
-        Real-time / Socket.io Projects
-      </h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Chatting Site</h5>
-              <p class="card-text">
-                Real-time chat with random usernames on dual screens<br />
-                <strong>Tech:</strong> Bootstrap, Socket.IO, Express JS
-              </p>
-              <a
-                href="https://github.com/Nabil-Shartaj-Khan/SocketIO-chatting-app"
-                target="_blank"
-                class="btn btn-outline-dark"
-                >GitHub Repo</a
-              >
+      <div class="project-section">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
+          <h2 class="text-success mb-0">Backend / PHP Projects</h2>
+          <span class="text-muted">1 Project</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">Backend</span>
+                <h5 class="card-title text-dark">PHP Login Feature</h5>
+                <p class="card-text">
+                  A PHP login feature with admin/user login, profile editing, and password handling.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> HTML, PHP, MySQL</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How server-side login works in PHP.</li>
+                  <li>How user records are stored and updated in MySQL.</li>
+                  <li>Why password handling matters in backend systems.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/PHP_advanced_topics" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
+          <h2 class="text-success mb-0">Real-time / Socket.io Projects</h2>
+          <span class="text-muted">1 Project</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body d-flex flex-column">
+                <span class="project-tag">Socket.io</span>
+                <h5 class="card-title text-dark">Chatting Site</h5>
+                <p class="card-text">
+                  A real-time chatting site with random usernames and dual-screen testing.
+                </p>
+                <p class="tech-text"><strong>Tech:</strong> Bootstrap, Socket.IO, Express JS</p>
+                <h6 class="text-success">What I learned</h6>
+                <ul class="learn-list text-muted">
+                  <li>How Socket.io sends messages instantly.</li>
+                  <li>How frontend and backend communicate in real time.</li>
+                  <li>How to test chat features across two browser screens.</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="https://github.com/Nabil-Shartaj-Khan/SocketIO-chatting-app" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
