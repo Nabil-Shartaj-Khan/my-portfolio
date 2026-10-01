@@ -1,25 +1,57 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Software engineering, full-stack development, cybersecurity research and learning projects by Nabil Shartaj Khan."
+    />
+
+    <title>Projects | Nabil Shartaj Khan</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Standard Favicon -->
-    <link rel="icon" href="./assets/logo.png" type="image/png" sizes="32x32" />
 
-    <!-- Apple Touch Icon (iPhone, iPad, iPod) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      href="./assets/logo.png"
+      type="image/png"
+      sizes="32x32"
+    />
 
-    <!-- Android Chrome Icon (Android devices) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo.png"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -27,17 +59,31 @@
       href="./assets/logo.png"
     />
 
-    <meta name="msapplication-TileImage" content="./assets/logo.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <title>Project Page</title>
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/logo.png"
+    />
+
+    <meta
+      name="msapplication-TileColor"
+      content="#ffffff"
+    />
   </head>
-  <body>
+
+  <body class="projects-page">
+    <!-- Preloader -->
     <div id="preloader"></div>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand text-dark" href="#project">Projects</a>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top projects-navbar">
+      <div class="container">
+        <a class="navbar-brand text-dark" href="#projects">
+          Nabil<span class="brand-dot">.</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -49,29 +95,37 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse navbar-collapse justify-content-end pe-5"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav align-items-lg-center">
+
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html">
+                Home
+              </a>
+            </li>
+
             <li class="nav-item">
               <a
-                class="nav-link active text-dark"
-                aria-current="page"
-                href="index.html"
-                >Home</a
+                class="nav-link text-dark"
+                href="index.html#skills"
               >
+                Technical Skills
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-dark" href="index.html#skills"
-                >Technical Skills</a
+              <a
+                class="nav-link text-dark"
+                href="index.html#education"
               >
+                Education
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="index.html#education"
-                >Education</a
-              >
-            </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle text-dark"
@@ -82,425 +136,1295 @@
               >
                 Others
               </a>
-              <ul class="dropdown-menu">
+
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a class="dropdown-item text-dark" href="experience.html"
-                    >Experience</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="experience.html"
                   >
+                    Experience
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="contact.html"
-                    >Contact me</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="contact.html"
                   >
+                    Contact me
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="myself.html"
-                    >About me</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="myself.html"
                   >
+                    About me
+                  </a>
                 </li>
               </ul>
             </li>
+
           </ul>
         </div>
       </div>
     </nav>
 
-    <style>
-      .projects-hero {
-        background: linear-gradient(135deg, #f8fff9, #ffffff);
-        border: 1px solid #e6f2ea;
-        border-radius: 22px;
-        padding: 40px 26px;
-        margin-top: 72px;
-      }
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
-      .section-label {
-        font-size: 0.85rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #198754;
-        font-weight: 700;
-      }
+    <header id="projects" class="projects-page-hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-10 text-center">
 
-      .project-section {
-        margin-top: 56px;
-      }
+            <span class="projects-eyebrow">
+              SOFTWARE ENGINEERING • CYBERSECURITY • RESEARCH
+            </span>
 
-      .project-card {
-        border: 1px solid #e9ecef;
-        border-radius: 18px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
+            <h1>
+              Things I've
+              <span>built, tested & learned from.</span>
+            </h1>
 
-      .project-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      }
+            <p class="projects-hero-lead">
+              A collection of software engineering projects,
+              cybersecurity research, and smaller experiments from
+              my development journey.
+            </p>
 
-      .project-tag {
-        display: inline-block;
-        background-color: #e9f7ef;
-        color: #198754;
-        border-radius: 999px;
-        padding: 5px 12px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-bottom: 12px;
-      }
+            <p class="projects-hero-description">
+              My work started with frontend and JavaScript projects,
+              progressed into full-stack applications and backend
+              systems, and now increasingly includes application
+              security and cybersecurity research.
+            </p>
 
-      .learn-list {
-        padding-left: 18px;
-        margin-bottom: 0;
-      }
+            <div class="project-jump-links">
+              <a href="#featured-projects">
+                Featured
+              </a>
 
-      .learn-list li {
-        margin-bottom: 6px;
-      }
+              <a href="#security-projects">
+                Cybersecurity
+              </a>
 
-      .tech-text {
-        font-size: 0.95rem;
-      }
+              <a href="#software-projects">
+                Software
+              </a>
 
-      .project-actions {
-        margin-top: auto;
-        padding-top: 16px;
-      }
-    </style>
-
-    <section id="projects" class="container py-5">
-      <div class="projects-hero">
-        <h1 class="text-dark mt-2 mb-3 text-center">Projects I Built and What I Learned</h1>
-      </div>
-
-      <div class="project-section">
-        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
-          <h2 class="text-success mb-0">Fullstack Projects</h2>
-          <span class="text-muted">5 Projects</span>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">Fullstack</span>
-                <h5 class="card-title text-dark">Student Management System</h5>
-                <p class="card-text">
-                  A student and course management system with JWT authentication, CRUD features,
-                  and separate user/admin roles.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> ReactJS, NodeJS, ExpressJS, MySQL</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How to build login and protected routes with JWT.</li>
-                  <li>How to connect frontend forms with backend APIs.</li>
-                  <li>How role-based access works for admin and normal users.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/Student-Management-System" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
-                </div>
-              </div>
+              <a href="#learning-projects">
+                Earlier Projects
+              </a>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">Real-time Fullstack</span>
-                <h5 class="card-title text-dark">BlogNestx2 (Real-Time Full-Stack Blogging Platform)</h5>
-                <p class="card-text">
-                  A blogging platform with user authentication, post subscriptions, and live notifications.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> React.js, Express.js, MongoDB, Socket.io, Passport.js</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How real-time notifications work using Socket.io.</li>
-                  <li>How to manage users, posts, and subscriptions.</li>
-                  <li>How MongoDB stores flexible blog content.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/BlogNestx2" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">Fullstack</span>
-                <h5 class="card-title text-dark">Airline Management System</h5>
-                <p class="card-text">
-                  An airline management system with admin/user roles and a planned booking system.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> TypeScript, ReactJS, NestJS, MySQL</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How TypeScript improves structure in larger projects.</li>
-                  <li>How NestJS separates controllers, services, and modules.</li>
-                  <li>How booking logic can be planned before full development.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/airport-management-frontend" target="_blank" class="btn btn-outline-dark me-2">Frontend</a>
-                  <a href="https://github.com/Nabil-Shartaj-Khan/aiport-management-backend" target="_blank" class="btn btn-outline-dark">Backend</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">Fullstack</span>
-                <h5 class="card-title text-dark">Skin Care Clinic</h5>
-                <p class="card-text">
-                  A clinic website with sign up, login, and appointment booking features.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> React.js, Bootstrap, Express.js, MySQL</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How to design booking flows for users.</li>
-                  <li>How to store appointment data in a database.</li>
-                  <li>How Bootstrap helps build clean responsive pages.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/skin-care-website" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">AI Web App</span>
-                <h5 class="card-title text-dark">RephraseAI - Smart Text Rewriter</h5>
-                <p class="card-text">
-                  A web app that rewrites messages in friendly, professional, or concise tones using AI.
-                  It keeps message history and allows quick copying.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> React, Material-UI, Node.js, Express.js, ApiFreeLLM</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How to connect an AI API with a frontend app.</li>
-                  <li>How to manage message history in the interface.</li>
-                  <li>How tone options improve user experience.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/RephraseAI" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+    </header>
 
-      <div class="project-section">
-        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
-          <h2 class="text-success mb-0">Frontend only Projects (React/Bootstrap)</h2>
-          <span class="text-muted">3 Projects</span>
-        </div>
+    <!-- =====================================================
+         FEATURED PROJECTS
+    ====================================================== -->
 
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">React Practice</span>
-                <h5 class="card-title text-dark">React Projects</h5>
-                <p class="card-text">
-                  A collection of small React projects including countdown timer, FAQ, EMI calculator, and custom modal.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> Bootstrap5, React</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How React components can be reused.</li>
-                  <li>How state changes update the user interface.</li>
-                  <li>How small projects improve frontend logic.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/React-challenges" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section
+      id="featured-projects"
+      class="projects-section featured-projects-section"
+    >
+      <div class="container">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">Task App</span>
-                <h5 class="card-title text-dark">To-do App</h5>
-                <p class="card-text">
-                  A task management app where users can add, edit, delete, mark done, and prioritize tasks.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> ReactJS, Bootstrap5</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How to manage lists using React state.</li>
-                  <li>How edit and delete actions affect stored data.</li>
-                  <li>How to make simple apps easier to use.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/To-do-work-project" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
-                  <a href="https://to-do-work-project.vercel.app/" target="_blank" class="btn btn-outline-success">Live Demo</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="projects-section-heading">
+          <div>
+            <span class="projects-section-label">
+              Selected Work
+            </span>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">PWA</span>
-                <h5 class="card-title text-dark">SoulSync-Personal Reminder App</h5>
-                <p class="card-text">
-                  A minimalist Progressive Web React app to track quizzes, assignments, and exams with local storage and calendar view.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> ReactJS, Bootstrap5</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How local storage keeps user data in the browser.</li>
-                  <li>How calendar views help organise deadlines.</li>
-                  <li>How PWA-style apps can feel close to mobile apps.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/Note-Site" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
-                  <a href="https://note-site-lovey.vercel.app/" target="_blank" class="btn btn-outline-success">Live Demo</a>
-                </div>
-              </div>
-            </div>
+            <h2>Featured Projects</h2>
+
+            <p>
+              Some of the projects that best represent what I'm
+              currently building and learning.
+            </p>
           </div>
         </div>
+
+        <!-- WAF RESEARCH -->
+
+        <article class="featured-project featured-security-project">
+          <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+              <div class="featured-project-content">
+
+                <div class="featured-project-meta">
+                  <span class="project-status completed">
+                    Completed Research
+                  </span>
+
+                  <span>
+                    Cybersecurity • Application Security
+                  </span>
+                </div>
+
+                <h3>
+                  Open-Source Web Application Firewall Research
+                </h3>
+
+                <p class="featured-description">
+                  Comparative security research into open-source
+                  Web Application Firewalls and their behaviour
+                  against controlled web application attacks.
+                </p>
+
+                <p>
+                  I worked with isolated Kali Linux and Ubuntu
+                  environments, vulnerable web applications, WAF
+                  configurations, security testing tools, and custom
+                  scripted testing to examine how malicious HTTP
+                  requests were detected or blocked.
+                </p>
+
+                <div class="project-tech-stack">
+                  <span>Python</span>
+                  <span>Bash</span>
+                  <span>ModSecurity</span>
+                  <span>OWASP CRS</span>
+                  <span>NAXSI</span>
+                  <span>Coraza</span>
+                  <span>DVWA</span>
+                  <span>Kali Linux</span>
+                  <span>Ubuntu</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="featured-project-details">
+
+                <span class="details-heading">
+                  What I worked with
+                </span>
+
+                <ul>
+                  <li>
+                    Custom Python and Bash security-testing scripts
+                  </li>
+
+                  <li>
+                    Controlled web application attack payloads
+                  </li>
+
+                  <li>
+                    HTTP response and blocking behaviour analysis
+                  </li>
+
+                  <li>
+                    WAF security alerts and rule analysis
+                  </li>
+
+                  <li>
+                    Comparative testing across multiple WAFs
+                  </li>
+
+                  <li>
+                    Isolated attacker and victim virtual machines
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- GREENVIBE -->
+
+        <article class="featured-project">
+          <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+              <div class="featured-project-content">
+
+                <div class="featured-project-meta">
+                  <span class="project-status built">
+                    Full-Stack Application
+                  </span>
+
+                  <span>
+                    Clinic Operations
+                  </span>
+                </div>
+
+                <h3>
+                  GreenVibe Clinic Hub
+                </h3>
+
+                <p class="featured-description">
+                  An internal clinic management platform designed to
+                  bring day-to-day operational workflows into one
+                  application.
+                </p>
+
+                <p>
+                  The system includes patient and appointment
+                  management, employee information, recruitment,
+                  useful links, dashboards, banking workflows,
+                  rosters, and restricted management functionality.
+                </p>
+
+                <div class="project-tech-stack">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>SQLite</span>
+                  <span>Bootstrap</span>
+                  <span>FullCalendar</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="featured-project-details">
+
+                <span class="details-heading">
+                  Key Features
+                </span>
+
+                <ul>
+                  <li>Patient management</li>
+                  <li>Appointment calendar</li>
+                  <li>Employee management</li>
+                  <li>Recruitment workflows</li>
+                  <li>Dashboard and operational tools</li>
+                  <li>Roster and management features</li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- REPHRASE AI -->
+
+        <article class="featured-project">
+          <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+              <div class="featured-project-content">
+
+                <div class="featured-project-meta">
+                  <span class="project-status built">
+                    AI Web Application
+                  </span>
+
+                  <span>
+                    Full-Stack Development
+                  </span>
+                </div>
+
+                <h3>
+                  RephraseAI
+                </h3>
+
+                <p class="featured-description">
+                  A smart text rewriting web application for
+                  transforming messages into friendly, professional,
+                  or concise communication styles.
+                </p>
+
+                <p>
+                  The application connects a React interface with a
+                  Node.js backend and AI API, while supporting
+                  message history and quick-copy functionality.
+                </p>
+
+                <div class="project-tech-stack">
+                  <span>React</span>
+                  <span>Material UI</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>AI API</span>
+                </div>
+
+                <div class="featured-actions">
+                  <a
+                    href="https://github.com/Nabil-Shartaj-Khan/RephraseAI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-btn project-btn-dark"
+                  >
+                    <i class="bi bi-github"></i>
+                    GitHub
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="featured-project-details">
+
+                <span class="details-heading">
+                  Key Takeaways
+                </span>
+
+                <ul>
+                  <li>
+                    Connecting an AI API with a frontend application
+                  </li>
+
+                  <li>
+                    Managing message history in the interface
+                  </li>
+
+                  <li>
+                    Designing multiple tone options for users
+                  </li>
+
+                  <li>
+                    Connecting React with an Express backend
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
       </div>
+    </section>
 
-      <div class="project-section">
-        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
-          <h2 class="text-success mb-0">Basic / Vanilla JS Projects</h2>
-          <span class="text-muted">1 Project</span>
+    <!-- =====================================================
+         CYBERSECURITY
+    ====================================================== -->
+
+    <section
+      id="security-projects"
+      class="projects-section security-projects-section"
+    >
+      <div class="container">
+
+        <div class="projects-section-heading">
+          <div>
+            <span class="projects-section-label">
+              Cybersecurity
+            </span>
+
+            <h2>Security Research & Labs</h2>
+
+            <p>
+              Hands-on security work and environments I'm currently
+              researching, testing, or designing.
+            </p>
+          </div>
         </div>
 
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">JavaScript</span>
-                <h5 class="card-title text-dark">JS Small Projects</h5>
-                <p class="card-text">
-                  A set of small JavaScript projects including calculator, image slider, BMI calculator, and clock.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How DOM selection and event listeners work.</li>
-                  <li>How JavaScript changes page content.</li>
-                  <li>How small logic-based projects build confidence.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/Javascript--small-projects" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+
+          <!-- WAF -->
+
+          <div class="col-lg-7">
+            <div class="security-project-card h-100">
+
+              <div class="security-card-top">
+                <div class="security-icon">
+                  🛡️
                 </div>
+
+                <span class="project-status completed">
+                  Completed Research
+                </span>
               </div>
+
+              <h3>
+                Open-Source WAF Security Research
+              </h3>
+
+              <p>
+                Investigation and comparative evaluation of
+                open-source Web Application Firewalls using
+                controlled attacks and scripted security testing.
+              </p>
+
+              <div class="security-subsection">
+                <span>Testing environment</span>
+
+                <p>
+                  Kali Linux • Ubuntu • Apache • DVWA • VirtualBox
+                </p>
+              </div>
+
+              <div class="security-subsection">
+                <span>Security tooling</span>
+
+                <p>
+                  ModSecurity • OWASP CRS • NAXSI • Coraza • Burp
+                  Suite • OWASP ZAP • SQLMap • Nikto • Nmap
+                </p>
+              </div>
+
+              <div class="security-subsection">
+                <span>Scripted testing</span>
+
+                <p>
+                  Python • Bash • HTTP analysis • Security alerts •
+                  Detection and blocking behaviour
+                </p>
+              </div>
+
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="project-section">
-        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
-          <h2 class="text-success mb-0">Backend / PHP Projects</h2>
-          <span class="text-muted">1 Project</span>
-        </div>
+          <!-- PURPLE TEAM -->
 
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">Backend</span>
-                <h5 class="card-title text-dark">PHP Login Feature</h5>
-                <p class="card-text">
-                  A PHP login feature with admin/user login, profile editing, and password handling.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> HTML, PHP, MySQL</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How server-side login works in PHP.</li>
-                  <li>How user records are stored and updated in MySQL.</li>
-                  <li>Why password handling matters in backend systems.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/PHP_advanced_topics" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
+          <div class="col-lg-5">
+            <div class="security-project-card planned-project h-100">
+
+              <div class="security-card-top">
+                <div class="security-icon">
+                  🟣
                 </div>
+
+                <span class="project-status planning">
+                  Planning & Development
+                </span>
               </div>
+
+              <h3>
+                End-to-End Purple Team Security Lab
+              </h3>
+
+              <p>
+                A planned security lab designed to connect offensive
+                testing with monitoring, detection, investigation,
+                and incident response.
+              </p>
+
+              <div class="planned-flow">
+
+                <span>Penetration Testing</span>
+                <i class="bi bi-arrow-down"></i>
+
+                <span>Network Monitoring</span>
+                <i class="bi bi-arrow-down"></i>
+
+                <span>SIEM & Detection</span>
+                <i class="bi bi-arrow-down"></i>
+
+                <span>DFIR</span>
+                <i class="bi bi-arrow-down"></i>
+
+                <span>Incident Response</span>
+
+              </div>
+
+              <div class="planning-note">
+                <i class="bi bi-info-circle"></i>
+
+                This project is currently being designed. The
+                technologies and security workflows here represent
+                areas I plan to implement and explore.
+              </div>
+
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="project-section">
-        <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
-          <h2 class="text-success mb-0">Real-time / Socket.io Projects</h2>
-          <span class="text-muted">1 Project</span>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm project-card">
-              <div class="card-body d-flex flex-column">
-                <span class="project-tag">Socket.io</span>
-                <h5 class="card-title text-dark">Chatting Site</h5>
-                <p class="card-text">
-                  A real-time chatting site with random usernames and dual-screen testing.
-                </p>
-                <p class="tech-text"><strong>Tech:</strong> Bootstrap, Socket.IO, Express JS</p>
-                <h6 class="text-success">What I learned</h6>
-                <ul class="learn-list text-muted">
-                  <li>How Socket.io sends messages instantly.</li>
-                  <li>How frontend and backend communicate in real time.</li>
-                  <li>How to test chat features across two browser screens.</li>
-                </ul>
-                <div class="project-actions">
-                  <a href="https://github.com/Nabil-Shartaj-Khan/SocketIO-chatting-app" target="_blank" class="btn btn-outline-dark">GitHub Repo</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <hr />
-    <div class="container">
-      <footer class="py-2 my-2 d-grid">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3 col-12">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="myself.html" class="nav-link px-2 text-muted">About me</a>
-          </li>
-          <li class="nav-item">
-            <a href="experience.html" class="nav-link px-2 text-muted"
-              >Experience</a
+    <!-- =====================================================
+         SOFTWARE ENGINEERING
+    ====================================================== -->
+
+    <section
+      id="software-projects"
+      class="projects-section software-projects-section"
+    >
+      <div class="container">
+
+        <div class="projects-section-heading">
+          <div>
+            <span class="projects-section-label">
+              Software Engineering
+            </span>
+
+            <h2>Full-Stack Projects</h2>
+
+            <p>
+              Applications I've built while developing my frontend,
+              backend, database, authentication, and real-time
+              development skills.
+            </p>
+          </div>
+
+          <span class="project-count">
+            4 Projects
+          </span>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- STUDENT MANAGEMENT -->
+
+          <div class="col-lg-6">
+            <article class="modern-project-card">
+
+              <div class="project-card-header">
+                <span class="project-number">
+                  01
+                </span>
+
+                <span class="project-category">
+                  Full-Stack
+                </span>
+              </div>
+
+              <h3>
+                Student Management System
+              </h3>
+
+              <p>
+                A student and course management system with JWT
+                authentication, CRUD functionality, and separate
+                user and administrator roles.
+              </p>
+
+              <div class="compact-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+              </div>
+
+              <div class="project-takeaway">
+                <strong>Key Takeaways</strong>
+
+                <p>
+                  JWT authentication, protected routes, frontend/API
+                  integration, and role-based access control.
+                </p>
+              </div>
+
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/Student-Management-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-text-link"
+              >
+                <i class="bi bi-github"></i>
+                View Repository
+                <span>↗</span>
+              </a>
+
+            </article>
+          </div>
+
+          <!-- BLOG -->
+
+          <div class="col-lg-6">
+            <article class="modern-project-card">
+
+              <div class="project-card-header">
+                <span class="project-number">
+                  02
+                </span>
+
+                <span class="project-category">
+                  Real-Time Full-Stack
+                </span>
+              </div>
+
+              <h3>
+                BlogNestx2
+              </h3>
+
+              <p>
+                A real-time blogging platform with authentication,
+                post subscriptions, user management, and live
+                notifications.
+              </p>
+
+              <div class="compact-tech">
+                <span>React</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Socket.io</span>
+                <span>Passport.js</span>
+              </div>
+
+              <div class="project-takeaway">
+                <strong>Key Takeaways</strong>
+
+                <p>
+                  Real-time notifications, subscription logic,
+                  MongoDB data modelling, and Socket.io.
+                </p>
+              </div>
+
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/BlogNestx2"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-text-link"
+              >
+                <i class="bi bi-github"></i>
+                View Repository
+                <span>↗</span>
+              </a>
+
+            </article>
+          </div>
+
+          <!-- AIRLINE -->
+
+          <div class="col-lg-6">
+            <article class="modern-project-card">
+
+              <div class="project-card-header">
+                <span class="project-number">
+                  03
+                </span>
+
+                <span class="project-category">
+                  TypeScript
+                </span>
+              </div>
+
+              <h3>
+                Airline Management System
+              </h3>
+
+              <p>
+                An airline management application with user/admin
+                roles and architecture for a booking management
+                system.
+              </p>
+
+              <div class="compact-tech">
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>NestJS</span>
+                <span>MySQL</span>
+              </div>
+
+              <div class="project-takeaway">
+                <strong>Key Takeaways</strong>
+
+                <p>
+                  TypeScript project structure, NestJS controllers,
+                  services and modules, and planning booking logic.
+                </p>
+              </div>
+
+              <div class="project-card-actions">
+
+                <a
+                  href="https://github.com/Nabil-Shartaj-Khan/airport-management-frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-text-link"
+                >
+                  <i class="bi bi-github"></i>
+                  Frontend
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href="https://github.com/Nabil-Shartaj-Khan/aiport-management-backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-text-link"
+                >
+                  <i class="bi bi-github"></i>
+                  Backend
+                  <span>↗</span>
+                </a>
+
+              </div>
+
+            </article>
+          </div>
+
+          <!-- SKIN CARE -->
+
+          <div class="col-lg-6">
+            <article class="modern-project-card">
+
+              <div class="project-card-header">
+                <span class="project-number">
+                  04
+                </span>
+
+                <span class="project-category">
+                  Full-Stack
+                </span>
+              </div>
+
+              <h3>
+                Skin Care Clinic
+              </h3>
+
+              <p>
+                A clinic website supporting user registration,
+                authentication, and appointment booking.
+              </p>
+
+              <div class="compact-tech">
+                <span>React</span>
+                <span>Bootstrap</span>
+                <span>Express</span>
+                <span>MySQL</span>
+              </div>
+
+              <div class="project-takeaway">
+                <strong>Key Takeaways</strong>
+
+                <p>
+                  Appointment booking flows, database-backed
+                  appointment records, authentication, and
+                  responsive interfaces.
+                </p>
+              </div>
+
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/skin-care-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-text-link"
+              >
+                <i class="bi bi-github"></i>
+                View Repository
+                <span>↗</span>
+              </a>
+
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         EARLIER / LEARNING PROJECTS
+    ====================================================== -->
+
+    <section
+      id="learning-projects"
+      class="projects-section learning-projects-section"
+    >
+      <div class="container">
+
+        <div class="projects-section-heading">
+          <div>
+            <span class="projects-section-label">
+              The Journey
+            </span>
+
+            <h2>Earlier & Learning Projects</h2>
+
+            <p>
+              Smaller projects that helped me build the foundations
+              I use in larger applications today.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- REACT CHALLENGES -->
+
+          <div class="col-lg-4 col-md-6">
+            <article class="learning-project-card">
+
+              <div class="learning-project-icon">
+                ⚛️
+              </div>
+
+              <span class="learning-category">
+                React Practice
+              </span>
+
+              <h3>
+                React Projects
+              </h3>
+
+              <p>
+                Countdown timer, FAQ interface, EMI calculator,
+                custom modal, and other small React exercises.
+              </p>
+
+              <div class="compact-tech">
+                <span>React</span>
+                <span>Bootstrap 5</span>
+              </div>
+
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/React-challenges"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-text-link"
+              >
+                <i class="bi bi-github"></i>
+                GitHub
+                <span>↗</span>
+              </a>
+
+            </article>
+          </div>
+
+          <!-- TODO -->
+
+          <div class="col-lg-4 col-md-6">
+            <article class="learning-project-card">
+
+              <div class="learning-project-icon">
+                ✅
+              </div>
+
+              <span class="learning-category">
+                Task Application
+              </span>
+
+              <h3>
+                To-do App
+              </h3>
+
+              <p>
+                Task management application supporting add, edit,
+                delete, completion, and task prioritisation.
+              </p>
+
+              <div class="compact-tech">
+                <span>React</span>
+                <span>Bootstrap 5</span>
+              </div>
+
+              <div class="project-card-actions">
+
+                <a
+                  href="https://github.com/Nabil-Shartaj-Khan/To-do-work-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-text-link"
+                >
+                  <i class="bi bi-github"></i>
+                  GitHub
+                </a>
+
+                <a
+                  href="https://to-do-work-project.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-text-link live-link"
+                >
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  Live
+                </a>
+
+              </div>
+
+            </article>
+          </div>
+
+          <!-- SOULSYNC -->
+
+          <div class="col-lg-4 col-md-6">
+            <article class="learning-project-card">
+
+              <div class="learning-project-icon">
+                📅
+              </div>
+
+              <span class="learning-category">
+                Progressive Web App
+              </span>
+
+              <h3>
+                SoulSync
+              </h3>
+
+              <p>
+                A minimalist reminder application for tracking
+                quizzes, assignments, and exams with local storage
+                and a calendar view.
+              </p>
+
+              <div class="compact-tech">
+                <span>React</span>
+                <span>Bootstrap 5</span>
+                <span>PWA</span>
+              </div>
+
+              <div class="project-card-actions">
+
+                <a
+                  href="https://github.com/Nabil-Shartaj-Khan/Note-Site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-text-link"
+                >
+                  <i class="bi bi-github"></i>
+                  GitHub
+                </a>
+
+                <a
+                  href="https://note-site-lovey.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-text-link live-link"
+                >
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  Live
+                </a>
+
+              </div>
+
+            </article>
+          </div>
+
+          <!-- VANILLA JS -->
+
+          <div class="col-lg-4 col-md-6">
+            <article class="learning-project-card">
+
+              <div class="learning-project-icon">
+                🟨
+              </div>
+
+              <span class="learning-category">
+                JavaScript Fundamentals
+              </span>
+
+              <h3>
+                JavaScript Small Projects
+              </h3>
+
+              <p>
+                Calculator, image slider, BMI calculator, clock,
+                and other exercises built while learning core
+                JavaScript and DOM manipulation.
+              </p>
+
+              <div class="compact-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/Javascript--small-projects"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-text-link"
+              >
+                <i class="bi bi-github"></i>
+                GitHub
+                <span>↗</span>
+              </a>
+
+            </article>
+          </div>
+
+          <!-- PHP -->
+
+          <div class="col-lg-4 col-md-6">
+            <article class="learning-project-card">
+
+              <div class="learning-project-icon">
+                🐘
+              </div>
+
+              <span class="learning-category">
+                Backend Fundamentals
+              </span>
+
+              <h3>
+                PHP Login Feature
+              </h3>
+
+              <p>
+                PHP authentication exercise with admin/user login,
+                profile editing, database records, and password
+                handling.
+              </p>
+
+              <div class="compact-tech">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+              </div>
+
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/PHP_advanced_topics"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-text-link"
+              >
+                <i class="bi bi-github"></i>
+                GitHub
+                <span>↗</span>
+              </a>
+
+            </article>
+          </div>
+
+          <!-- SOCKET -->
+
+          <div class="col-lg-4 col-md-6">
+            <article class="learning-project-card">
+
+              <div class="learning-project-icon">
+                💬
+              </div>
+
+              <span class="learning-category">
+                Real-Time Communication
+              </span>
+
+              <h3>
+                Chatting Site
+              </h3>
+
+              <p>
+                A real-time chat application with generated
+                usernames and multi-browser testing using
+                Socket.io.
+              </p>
+
+              <div class="compact-tech">
+                <span>Socket.io</span>
+                <span>Express</span>
+                <span>Bootstrap</span>
+              </div>
+
+              <a
+                href="https://github.com/Nabil-Shartaj-Khan/SocketIO-chatting-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-text-link"
+              >
+                <i class="bi bi-github"></i>
+                GitHub
+                <span>↗</span>
+              </a>
+
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROJECT PHILOSOPHY
+    ====================================================== -->
+
+    <section class="projects-philosophy">
+      <div class="container">
+        <div class="projects-philosophy-inner">
+
+          <span class="projects-section-label">
+            How I Learn
+          </span>
+
+          <h2>
+            Every project doesn't need to be huge to teach
+            something useful.
+          </h2>
+
+          <p>
+            Some of these projects are complete applications.
+            Others were built specifically to understand a
+            framework, security concept, API, database, or
+            programming technique. Together, they show how my
+            interests have progressed from web development into
+            full-stack engineering and cybersecurity.
+          </p>
+
+          <div class="learning-flow">
+            <span>Learn</span>
+            <i class="bi bi-arrow-right"></i>
+
+            <span>Build</span>
+            <i class="bi bi-arrow-right"></i>
+
+            <span>Break</span>
+            <i class="bi bi-arrow-right"></i>
+
+            <span>Understand</span>
+            <i class="bi bi-arrow-right"></i>
+
+            <strong>Improve</strong>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="projects-cta">
+      <div class="container">
+        <div class="projects-cta-inner">
+
+          <span class="projects-section-label">
+            Let's Connect
+          </span>
+
+          <h2>
+            Interested in something I've built?
+          </h2>
+
+          <p>
+            I'm always interested in discussing software
+            engineering, web applications, cybersecurity,
+            application security, and opportunities to keep
+            learning.
+          </p>
+
+          <div class="projects-cta-actions">
+
+            <a
+              href="contact.html"
+              class="btn btn-light"
             >
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link px-2 text-muted"
-              >Contact me</a
+              Contact Me
+            </a>
+
+            <a
+              href="experience.html"
+              class="btn btn-outline-light"
             >
-          </li>
-          <li class="nav-item">
-            <a href="showcase.html" class="nav-link px-2 text-muted"
-              >Projects</a
+              View Experience
+            </a>
+
+            <a
+              href="myself.html"
+              class="btn btn-outline-light"
             >
+              About Me
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="projects-footer">
+      <div class="container">
+
+        <div class="projects-footer-top">
+
+          <a
+            href="#projects"
+            class="projects-footer-brand"
+          >
+            Nabil<span>.</span>
+          </a>
+
+          <p>
+            Full-Stack Software Engineering • Cybersecurity •
+            Application Security
+          </p>
+
+        </div>
+
+        <ul class="nav justify-content-center projects-footer-nav">
+
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link"
+            >
+              Home
+            </a>
           </li>
+
+          <li class="nav-item">
+            <a
+              href="myself.html"
+              class="nav-link"
+            >
+              About me
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="experience.html"
+              class="nav-link"
+            >
+              Experience
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="contact.html"
+              class="nav-link"
+            >
+              Contact me
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="showcase.html"
+              class="nav-link"
+            >
+              Projects
+            </a>
+          </li>
+
         </ul>
-        <button class="btn btn-success col-2" id="back-to-top">
-          Back to top
-        </button>
-        <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
-        <span id="access-date" class="text-center text-muted"
-          >Webpage access date:
-        </span>
-      </footer>
-    </div>
+
+        <div class="projects-footer-bottom">
+
+          <button
+            class="btn btn-outline-dark btn-sm"
+            id="back-to-top"
+            type="button"
+          >
+            ↑ Back to top
+          </button>
+
+          <p>
+            ©
+            <span id="copyright-year"></span>
+            Nabil Shartaj Khan
+          </p>
+
+          <span id="access-date">
+            Webpage access date:
+          </span>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script>
+      // Back to top
       document
         .getElementById("back-to-top")
         .addEventListener("click", function () {
@@ -510,40 +1434,63 @@
           });
         });
 
+      // Copyright year
+      document.getElementById("copyright-year").textContent =
+        new Date().getFullYear();
+
+      // Access date
       function formatDate(date) {
         const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, "0");
-        const day = String(date.getDate()).padStart(2, "0");
+
+        const month = String(
+          date.getMonth() + 1
+        ).padStart(2, "0");
+
+        const day = String(
+          date.getDate()
+        ).padStart(2, "0");
+
         let hours = date.getHours();
-        const minutes = String(date.getMinutes()).padStart(2, "0");
-        const seconds = String(date.getSeconds()).padStart(2, "0");
 
-        let period = "AM";
+        const minutes = String(
+          date.getMinutes()
+        ).padStart(2, "0");
 
-        if (hours >= 12) {
-          period = "PM";
-          hours = hours % 12 || 12;
-        }
+        const seconds = String(
+          date.getSeconds()
+        ).padStart(2, "0");
+
+        const period =
+          hours >= 12 ? "PM" : "AM";
+
+        hours = hours % 12 || 12;
 
         return `${year}-${month}-${day} at ${hours}:${minutes}:${seconds} ${period}`;
       }
 
-      const currentDate = new Date();
+      document.getElementById(
+        "access-date"
+      ).textContent +=
+        " " + formatDate(new Date());
 
-      document.getElementById("access-date").textContent +=
-        formatDate(currentDate);
-    </script>
-    <script>
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
+      // Preloader
+      const loader =
+        document.getElementById("preloader");
+
+      window.addEventListener(
+        "load",
+        function () {
+          loader.style.display = "none";
+        }
+      );
     </script>
 
+    <!-- IMPORTANT: Keep this exact Bootstrap bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>

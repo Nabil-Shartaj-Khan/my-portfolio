@@ -2,25 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Contact Nabil Shartaj Khan for software engineering, full-stack development, cybersecurity and application security opportunities."
+    />
+
+    <title>Contact | Nabil Shartaj Khan</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Standard Favicon -->
-    <link rel="icon" href="./assets/logo.png" type="image/png" sizes="32x32" />
 
-    <!-- Apple Touch Icon (iPhone, iPad, iPod) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Android Chrome Icon (Android devices) -->
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      href="./assets/logo.png"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo.png"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -28,17 +63,38 @@
       href="./assets/logo.png"
     />
 
-    <meta name="msapplication-TileImage" content="./assets/logo.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <title>Contact Me</title>
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/logo.png"
+    />
+
+    <meta
+      name="msapplication-TileColor"
+      content="#ffffff"
+    />
   </head>
-  <body>
+
+  <body class="contact-page">
+
+    <!-- Preloader -->
     <div id="preloader"></div>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
+      class="navbar navbar-expand-lg navbar-light fixed-top contact-navbar"
     >
-      <div class="container-fluid">
-        <a class="navbar-brand text-dark" href="#intro">Contact me</a>
+      <div class="container">
+
+        <a
+          class="navbar-brand text-dark"
+          href="#contact"
+        >
+          Nabil<span class="brand-dot">.</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -50,30 +106,42 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse navbar-collapse justify-content-end pe-5"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav align-items-lg-center">
+
             <li class="nav-item">
               <a
-                class="nav-link active text-dark"
-                aria-current="page"
+                class="nav-link text-dark"
                 href="index.html"
-                >Home</a
               >
+                Home
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-dark" href="index.html#skills"
-                >Technical Skills</a
+              <a
+                class="nav-link text-dark"
+                href="index.html#skills"
               >
+                Technical Skills
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-dark" href="index.html#education"
-                >Education</a
+              <a
+                class="nav-link text-dark"
+                href="index.html#education"
               >
+                Education
+              </a>
             </li>
+
             <li class="nav-item dropdown">
+
               <a
                 class="nav-link dropdown-toggle text-dark"
                 href="#"
@@ -83,164 +151,634 @@
               >
                 Others
               </a>
-              <ul class="dropdown-menu">
+
+              <ul class="dropdown-menu dropdown-menu-end">
+
                 <li>
-                  <a class="dropdown-item text-dark" href="myself.html"
-                    >About myself</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="myself.html"
                   >
+                    About me
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="experience.html"
-                    >Experience</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="experience.html"
                   >
+                    Experience
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="showcase.html"
-                    >Projects</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="showcase.html"
                   >
+                    Projects
+                  </a>
                 </li>
-                <li>
-                  <a class="dropdown-item text-dark" href="contact.html"
-                    >Contact me</a
-                  >
-                </li>
+
               </ul>
+
             </li>
+
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container d-flex flex-column p-2 pt-4" id="contact">
-      <h2 class="display-5 text-dark pt-5 pb-4" style="font-family: Alegreya;">
-        <i class="bi bi-person-lines-fill p-2"></i>
-        I'm available on these platforms-
-      </h2>
-      <div class="container my-5 border border-2 p-5 shadow-lg">
-        <div class="row">
-          <div class="col-md-6">
-            <a
-              class="btn btn-outline-dark mb-4 py-3 fs-4"
-              href="mailto:shartajnabil@gmail.com"
-            >
-              <i class="bi bi-envelope-open p-1 pe-md-2"></i> Email Me now
-            </a>
-          </div>
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
-          <div class="col-md-6">
-            <a
-              class="btn btn-outline-dark mb-4 py-3 fs-4"
-              href="https://www.linkedin.com/in/nabil-shartaj-khan-6b1341252/"
-              target="_blank"
-            >
-              <i class="bi bi-linkedin p-1 pe-md-2"></i>My Linkedin
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a
-              class="btn btn-outline-dark mb-4 py-3 fs-4"
-              href="https://www.facebook.com/Nsk.HoundWolf/"
-              style="text-decoration: none"
-              target="_blank"
-            >
-              <i class="bi bi-facebook p-1 pe-md-2"></i>My Facebook
-            </a>
-          </div>
+    <header
+      id="contact"
+      class="contact-hero"
+    >
+      <div class="container">
 
-          <div class="col-md-6">
-            <a
-              class="btn btn-outline-dark mb-4 py-3 fs-4"
-              href="https://github.com/Nabil-Shartaj-Khan/"
-              style="text-decoration: none"
-              target="_blank"
-            >
-              <i class="bi bi-github p-1 pe-md-2"></i>My Github
-            </a>
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-10 text-center">
+
+            <span class="contact-eyebrow">
+              LET'S CONNECT
+            </span>
+
+            <h1>
+              Have something in mind?
+              <span>Let's talk.</span>
+            </h1>
+
+            <p class="contact-hero-lead">
+              I'm always happy to connect about software engineering,
+              full-stack development, cybersecurity, application
+              security, or interesting opportunities.
+            </p>
+
+            <p class="contact-hero-description">
+              Whether you'd like to discuss a role, a project,
+              collaboration, or simply connect professionally,
+              feel free to reach out through any of the platforms
+              below.
+            </p>
+
+            <div class="contact-hero-actions">
+
+              <a
+                href="mailto:shartajnabil@gmail.com"
+                class="btn contact-primary-btn"
+              >
+                <i class="bi bi-envelope"></i>
+                Email Me
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/nabil-shartaj-khan-6b1341252/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn contact-secondary-btn"
+              >
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+              </a>
+
+            </div>
+
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <footer class="py-2 my-2 mt-5 d-grid">
-        <hr />
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3 col-12">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="myself.html" class="nav-link px-2 text-muted">About me</a>
-          </li>
-          <li class="nav-item">
-            <a href="experience.html" class="nav-link px-2 text-muted"
-              >Experience</a
+      </div>
+    </header>
+
+    <!-- =====================================================
+         CONTACT METHODS
+    ====================================================== -->
+
+    <section class="contact-methods-section">
+      <div class="container">
+
+        <div class="contact-section-heading">
+
+          <span class="contact-section-label">
+            Contact
+          </span>
+
+          <h2>
+            Find me online.
+          </h2>
+
+          <p>
+            Email is usually the best way to reach me about
+            professional opportunities. You can also connect with
+            me through LinkedIn, GitHub, or Facebook.
+          </p>
+
+        </div>
+
+        <div class="row g-4">
+
+          <!-- EMAIL -->
+
+          <div class="col-lg-6">
+
+            <a
+              href="mailto:shartajnabil@gmail.com"
+              class="contact-method-card primary-contact-card"
             >
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link px-2 text-muted"
-              >Contact me</a
+
+              <div class="contact-card-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+
+              <div class="contact-card-content">
+
+                <span class="contact-card-label">
+                  Best way to reach me
+                </span>
+
+                <h3>
+                  Email
+                </h3>
+
+                <p>
+                  shartajnabil@gmail.com
+                </p>
+
+              </div>
+
+              <div class="contact-card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+            </a>
+
+          </div>
+
+          <!-- LINKEDIN -->
+
+          <div class="col-lg-6">
+
+            <a
+              href="https://www.linkedin.com/in/nabil-shartaj-khan-6b1341252/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-method-card"
             >
-          </li>
-          <li class="nav-item">
-            <a href="showcase.html" class="nav-link px-2 text-muted"
-              >Projects</a
+
+              <div class="contact-card-icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+
+              <div class="contact-card-content">
+
+                <span class="contact-card-label">
+                  Professional Network
+                </span>
+
+                <h3>
+                  LinkedIn
+                </h3>
+
+                <p>
+                  Connect with me professionally.
+                </p>
+
+              </div>
+
+              <div class="contact-card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+            </a>
+
+          </div>
+
+          <!-- GITHUB -->
+
+          <div class="col-lg-6">
+
+            <a
+              href="https://github.com/Nabil-Shartaj-Khan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-method-card"
             >
+
+              <div class="contact-card-icon">
+                <i class="bi bi-github"></i>
+              </div>
+
+              <div class="contact-card-content">
+
+                <span class="contact-card-label">
+                  Code & Projects
+                </span>
+
+                <h3>
+                  GitHub
+                </h3>
+
+                <p>
+                  Explore my repositories and development work.
+                </p>
+
+              </div>
+
+              <div class="contact-card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+            </a>
+
+          </div>
+
+          <!-- FACEBOOK -->
+
+          <div class="col-lg-6">
+
+            <a
+              href="https://www.facebook.com/Nsk.HoundWolf/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-method-card"
+            >
+
+              <div class="contact-card-icon">
+                <i class="bi bi-facebook"></i>
+              </div>
+
+              <div class="contact-card-content">
+
+                <span class="contact-card-label">
+                  Social
+                </span>
+
+                <h3>
+                  Facebook
+                </h3>
+
+                <p>
+                  Find me on Facebook.
+                </p>
+
+              </div>
+
+              <div class="contact-card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CURRENTLY INTERESTED IN
+    ====================================================== -->
+
+    <section class="contact-interests-section">
+      <div class="container">
+
+        <div class="contact-interests-box">
+
+          <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+              <span class="contact-section-label">
+                Current Interests
+              </span>
+
+              <h2>
+                What I'd love to talk about.
+              </h2>
+
+              <p>
+                My background is primarily in software engineering,
+                and I'm currently developing deeper experience in
+                cybersecurity and application security.
+              </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="contact-interest-list">
+
+                <div class="contact-interest-item">
+                  <span>01</span>
+
+                  <div>
+                    <strong>
+                      Software Engineering
+                    </strong>
+
+                    <p>
+                      Full-stack, frontend, backend and web
+                      application development.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-interest-item">
+                  <span>02</span>
+
+                  <div>
+                    <strong>
+                      Cybersecurity
+                    </strong>
+
+                    <p>
+                      Security-focused opportunities where I can
+                      continue developing hands-on experience.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-interest-item">
+                  <span>03</span>
+
+                  <div>
+                    <strong>
+                      Application Security
+                    </strong>
+
+                    <p>
+                      Secure software development, web security,
+                      vulnerability testing and security research.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-interest-item">
+                  <span>04</span>
+
+                  <div>
+                    <strong>
+                      Collaboration
+                    </strong>
+
+                    <p>
+                      Open-source projects, technical projects and
+                      interesting ideas worth building.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SIMPLE MESSAGE
+    ====================================================== -->
+
+    <section class="contact-message-section">
+      <div class="container">
+
+        <div class="contact-message-inner">
+
+          <span class="contact-section-label">
+            Say Hello
+          </span>
+
+          <h2>
+            The easiest way to start is simply to send a message.
+          </h2>
+
+          <p>
+            If you're reaching out about an opportunity, project,
+            or collaboration, feel free to include a little context
+            and I'll be happy to have a conversation.
+          </p>
+
+          <a
+            href="mailto:shartajnabil@gmail.com"
+            class="contact-email-link"
+          >
+            <i class="bi bi-envelope"></i>
+
+            shartajnabil@gmail.com
+
+            <span>→</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="contact-footer">
+      <div class="container">
+
+        <div class="contact-footer-top">
+
+          <a
+            href="#contact"
+            class="contact-footer-brand"
+          >
+            Nabil<span>.</span>
+          </a>
+
+          <p>
+            Full-Stack Software Engineering • Cybersecurity •
+            Application Security
+          </p>
+
+        </div>
+
+        <ul
+          class="nav justify-content-center contact-footer-nav"
+        >
+
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link"
+            >
+              Home
+            </a>
           </li>
+
+          <li class="nav-item">
+            <a
+              href="myself.html"
+              class="nav-link"
+            >
+              About me
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="experience.html"
+              class="nav-link"
+            >
+              Experience
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="contact.html"
+              class="nav-link"
+            >
+              Contact me
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="showcase.html"
+              class="nav-link"
+            >
+              Projects
+            </a>
+          </li>
+
         </ul>
-        <button class="btn btn-success col-12 col-md-2" id="back-to-top">
-          Back to top
-        </button>
-        <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
-        <span id="access-date" class="text-center text-muted"
-          >Webpage access date:
-        </span>
-      </footer>
-    </div>
+
+        <div class="contact-footer-bottom">
+
+          <button
+            class="btn btn-outline-dark btn-sm"
+            id="back-to-top"
+            type="button"
+          >
+            ↑ Back to top
+          </button>
+
+          <p>
+            ©
+            <span id="copyright-year"></span>
+            Nabil Shartaj Khan
+          </p>
+
+          <span id="access-date">
+            Webpage access date:
+          </span>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script>
+
+      // Back to top
       document
         .getElementById("back-to-top")
         .addEventListener("click", function () {
+
           window.scrollTo({
             top: 0,
             behavior: "smooth",
           });
+
         });
 
+
+      // Dynamic copyright year
+      document.getElementById(
+        "copyright-year"
+      ).textContent =
+        new Date().getFullYear();
+
+
+      // Access date
       function formatDate(date) {
-        const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, "0");
-        const day = String(date.getDate()).padStart(2, "0");
-        let hours = date.getHours();
-        const minutes = String(date.getMinutes()).padStart(2, "0");
-        const seconds = String(date.getSeconds()).padStart(2, "0");
 
-        let period = "AM";
+        const year =
+          date.getFullYear();
 
-        if (hours >= 12) {
-          period = "PM";
-          hours = hours % 12 || 12;
-        }
+        const month =
+          String(
+            date.getMonth() + 1
+          ).padStart(2, "0");
+
+        const day =
+          String(
+            date.getDate()
+          ).padStart(2, "0");
+
+        let hours =
+          date.getHours();
+
+        const minutes =
+          String(
+            date.getMinutes()
+          ).padStart(2, "0");
+
+        const seconds =
+          String(
+            date.getSeconds()
+          ).padStart(2, "0");
+
+        const period =
+          hours >= 12
+            ? "PM"
+            : "AM";
+
+        hours =
+          hours % 12 || 12;
 
         return `${year}-${month}-${day} at ${hours}:${minutes}:${seconds} ${period}`;
+
       }
 
-      const currentDate = new Date();
 
-      document.getElementById("access-date").textContent +=
-        formatDate(currentDate);
-    </script>
-    <script>
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
+      document.getElementById(
+        "access-date"
+      ).textContent +=
+        " " + formatDate(new Date());
+
+
+      // Preloader
+      const loader =
+        document.getElementById(
+          "preloader"
+        );
+
+      window.addEventListener(
+        "load",
+        function () {
+
+          loader.style.display =
+            "none";
+
+        }
+      );
+
     </script>
 
+    <!-- Correct Bootstrap JS Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>

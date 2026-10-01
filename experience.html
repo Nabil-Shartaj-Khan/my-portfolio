@@ -2,31 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Professional software engineering, independent development and cybersecurity experience of Nabil Shartaj Khan."
+    />
+
+    <title>Experience | Nabil Shartaj Khan</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha384-..."
-      crossorigin="anonymous"
-    />
+
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Standard Favicon -->
-    <link rel="icon" href="./assets/logo.png" type="image/png" sizes="32x32" />
 
-    <!-- Apple Touch Icon (iPhone, iPad, iPod) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Android Chrome Icon (Android devices) -->
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      href="./assets/logo.png"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo.png"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -34,16 +63,38 @@
       href="./assets/logo.png"
     />
 
-    <meta name="msapplication-TileImage" content="./assets/logo.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <title>My experience</title>
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/logo.png"
+    />
+
+    <meta
+      name="msapplication-TileColor"
+      content="#ffffff"
+    />
   </head>
-  <body>
+
+  <body class="experience-page">
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
+      class="navbar navbar-expand-lg navbar-light fixed-top experience-navbar"
     >
-      <div class="container-fluid">
-        <a class="navbar-brand text-dark" href="#intro">Experience</a>
+      <div class="container">
+
+        <a
+          class="navbar-brand text-dark"
+          href="#experience"
+        >
+          Nabil<span class="brand-dot">.</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -55,30 +106,42 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse navbar-collapse justify-content-end pe-5"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav align-items-lg-center">
+
             <li class="nav-item">
               <a
-                class="nav-link active text-dark"
-                aria-current="page"
+                class="nav-link text-dark"
                 href="index.html"
-                >Home</a
               >
+                Home
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-dark" href="index.html#skills"
-                >Technical Skills</a
+              <a
+                class="nav-link text-dark"
+                href="index.html#skills"
               >
+                Technical Skills
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-dark" href="index.html#education"
-                >Education</a
+              <a
+                class="nav-link text-dark"
+                href="index.html#education"
               >
+                Education
+              </a>
             </li>
+
             <li class="nav-item dropdown">
+
               <a
                 class="nav-link dropdown-toggle text-dark"
                 href="#"
@@ -88,199 +151,1005 @@
               >
                 Others
               </a>
-              <ul class="dropdown-menu">
+
+              <ul class="dropdown-menu dropdown-menu-end">
+
                 <li>
-                  <a class="dropdown-item text-dark" href="myself.html"
-                    >About myself</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="myself.html"
                   >
+                    About me
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="experience.html"
-                    >Experience</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="showcase.html"
                   >
+                    Projects
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="showcase.html"
-                    >Projects</a
+                  <a
+                    class="dropdown-item text-dark"
+                    href="contact.html"
                   >
+                    Contact me
+                  </a>
                 </li>
-                <li>
-                  <a class="dropdown-item text-dark" href="contact.html"
-                    >Contact me</a
-                  >
-                </li>
+
               </ul>
             </li>
+
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container pt-5 mt-3">
-      <div class="one-exp py-4 px-4 shadow-lg py-4">
-        <div class="d-flex justify-content-between">
-          <div>
-            <h2 class="text-dark">Junior Software Engineer</h2>
-            <h5>June 2024 - January 2025</h5>
-            <h6>
-              <a
-                href="https://trustaxiatapay.com/"
-                style="text-decoration: none"
-                target="_blank"
-                class="text-success fs-5"
-                >Trust Axiata Digital Limited</a
-              >
-            </h6>
-          </div>
-          <div>
-            <img src="./assets/office-logo.jpg" width="150" height="auto" />
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <header
+      id="experience"
+      class="experience-hero"
+    >
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-10 text-center">
+
+            <span class="experience-eyebrow">
+              SOFTWARE ENGINEERING • DEVELOPMENT • SECURITY
+            </span>
+
+            <h1>
+              Experience that shaped
+              <span>how I build.</span>
+            </h1>
+
+            <p class="experience-hero-lead">
+              From production software engineering to independent
+              full-stack development and hands-on cybersecurity
+              research.
+            </p>
+
+            <p class="experience-hero-description">
+              My professional foundation is in software engineering.
+              Since then, I've continued building applications while
+              expanding into cybersecurity, application security,
+              and secure software development.
+            </p>
+
+            <div class="experience-jump-links">
+
+              <a href="#professional-experience">
+                Professional
+              </a>
+
+              <a href="#independent-development">
+                Development
+              </a>
+
+              <a href="#security-experience">
+                Security
+              </a>
+
+            </div>
+
           </div>
         </div>
-        <p class="lead mt-2">
-          I worked happily as a Software Engineer, contributing to a dynamic and
-          collaborative team. During my time, I implemented log management
-          systems for both agent and user middleware, improving debugging
-          efficiency by <b>30%</b>. I developed web-based payment solutions for
-          services like DESCO and DPDC, streamlining transactions and increasing
-          user satisfaction by <b>25%</b>. Additionally, I integrated Ekpay for
-          seamless bill status retrieval and payments, reducing processing times
-          by <b>40%</b>, and created receipt generation systems for various
-          services, enhancing operational efficiency by <b>20%</b>. I also
-          integrated DNCC Trade License APIs for bill payments, automated bundle
-          management with sequencing, filtering, and updated sequence storage,
-          achieving a <b>35%</b> improvement in data consistency. Furthermore, I
-          redesigned response models and implemented functionalities for
-          provider listing, bill retrieval, payments, and receipts for internet
-          and water services across microservices and middleware, boosting
-          response accuracy by <b>30%</b>. My contributions also included adding
-          fetch and payment capabilities for multiple insurance services,
-          expanding service offerings by <b>50%</b> and demonstrating my
-          expertise in API integration and service-oriented architecture.
-        </p>
+
       </div>
-      <!-- second exp -->
-      <div class="one-exp py-4 px-4 shadow-lg py-4">
-        <h2 class="text-dark">Full-Stack web developing</h2>
-        <h5>January 2020-Current</h5>
-        <h6 class="text-success fs-5">Self-taught</h6>
-        <p class="lead mt-2">
-          As a self-taught web developer, I've learned a bunch of cool skills to
-          make websites look good and work smoothly. I started with HTML and CSS
-          for the basics, then added Bootstrap and Tailwind CSS to make things
-          stylish. I got into React to create interactive parts of websites. On
-          the behind-the-scenes part, I learned Express.js, PHP, and Node.js to
-          handle the server stuff. I also dealt with databases using MySQL and
-          MongoDB. For live chatting and updates on websites, I picked up
-          Socket.IO. Right now, I'm learning Next.js to make things even better.
-          This journey shows I'm committed to learning and keeping up with
-          what's new in web development. While learning, whatever I learned,
-          implemented that in real-time and showcased in my
+    </header>
+
+    <!-- =====================================================
+         PROFESSIONAL EXPERIENCE
+    ====================================================== -->
+
+    <section
+      id="professional-experience"
+      class="experience-section professional-experience-section"
+    >
+      <div class="container">
+
+        <div class="experience-section-heading">
+
+          <span class="experience-section-label">
+            Professional Experience
+          </span>
+
+          <h2>
+            Building software in production.
+          </h2>
+
+          <p>
+            Professional engineering experience working with
+            payment services, APIs, middleware, microservices,
+            logging, and backend integrations.
+          </p>
+
+        </div>
+
+        <!-- TRUST AXIATA -->
+
+        <article class="experience-feature-card">
+
+          <div class="row g-5">
+
+            <!-- LEFT -->
+
+            <div class="col-lg-4">
+
+              <div class="experience-role-summary">
+
+                <span class="experience-type">
+                  Software Engineering
+                </span>
+
+                <h3>
+                  Junior Software Engineer
+                </h3>
+
+                <a
+                  href="https://trustaxiatapay.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="experience-company"
+                >
+                  Trust Axiata Digital Limited
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+
+                <div class="experience-period">
+                  <i class="bi bi-calendar3"></i>
+                  June 2024 – January 2025
+                </div>
+
+                <div class="experience-logo-wrapper">
+
+                  <img
+                    src="./assets/office-logo.jpg"
+                    alt="Trust Axiata Digital Limited"
+                    class="experience-company-logo"
+                  />
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="col-lg-8">
+
+              <div class="experience-role-details">
+
+                <span class="role-intro-label">
+                  What I worked on
+                </span>
+
+                <p class="role-introduction">
+                  I worked across backend services, middleware,
+                  payment integrations, and service-oriented
+                  architecture supporting digital payment and
+                  bill-payment functionality.
+                </p>
+
+                <div class="experience-achievements">
+
+                  <div class="achievement-item">
+                    <div class="achievement-icon">
+                      <i class="bi bi-credit-card"></i>
+                    </div>
+
+                    <div>
+                      <h4>
+                        Payment Service Integration
+                      </h4>
+
+                      <p>
+                        Developed and integrated web-based payment
+                        functionality for services including DESCO,
+                        DPDC, internet, water, insurance, and other
+                        service providers.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="achievement-item">
+                    <div class="achievement-icon">
+                      <i class="bi bi-diagram-3"></i>
+                    </div>
+
+                    <div>
+                      <h4>
+                        API & Middleware Development
+                      </h4>
+
+                      <p>
+                        Worked across middleware and microservices to
+                        implement provider listing, bill retrieval,
+                        payment processing, and receipt-generation
+                        workflows.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="achievement-item">
+                    <div class="achievement-icon">
+                      <i class="bi bi-arrow-left-right"></i>
+                    </div>
+
+                    <div>
+                      <h4>
+                        Ekpay Integration
+                      </h4>
+
+                      <p>
+                        Integrated Ekpay functionality for retrieving
+                        bill status and supporting payment processing
+                        across relevant services.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="achievement-item">
+                    <div class="achievement-icon">
+                      <i class="bi bi-file-earmark-text"></i>
+                    </div>
+
+                    <div>
+                      <h4>
+                        Receipt Generation
+                      </h4>
+
+                      <p>
+                        Developed receipt-generation functionality
+                        for multiple payment and service workflows.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="achievement-item">
+                    <div class="achievement-icon">
+                      <i class="bi bi-journal-code"></i>
+                    </div>
+
+                    <div>
+                      <h4>
+                        Logging & Debugging
+                      </h4>
+
+                      <p>
+                        Implemented log-management functionality
+                        across agent and user middleware to support
+                        debugging, monitoring, and troubleshooting.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="achievement-item">
+                    <div class="achievement-icon">
+                      <i class="bi bi-list-ol"></i>
+                    </div>
+
+                    <div>
+                      <h4>
+                        Bundle Management
+                      </h4>
+
+                      <p>
+                        Developed functionality for bundle sequencing,
+                        filtering, and updated sequence storage to
+                        improve management of service data.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="experience-tech-stack">
+
+                  <span>Backend Development</span>
+                  <span>REST APIs</span>
+                  <span>Microservices</span>
+                  <span>Middleware</span>
+                  <span>Payment Systems</span>
+                  <span>API Integration</span>
+                  <span>Logging</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         INDEPENDENT DEVELOPMENT
+    ====================================================== -->
+
+    <section
+      id="independent-development"
+      class="experience-section independent-section"
+    >
+      <div class="container">
+
+        <div class="row align-items-start g-5">
+
+          <div class="col-lg-5">
+
+            <span class="experience-section-label">
+              Independent Development
+            </span>
+
+            <h2 class="experience-side-heading">
+              Learning by
+              <span>building things.</span>
+            </h2>
+
+            <p class="experience-side-description">
+              My development experience extends beyond professional
+              employment. I've consistently used personal projects
+              to explore technologies, architectures, and software
+              engineering concepts.
+            </p>
+
+            <a
+              href="https://github.com/Nabil-Shartaj-Khan?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="experience-primary-link"
+            >
+              <i class="bi bi-github"></i>
+              Explore my GitHub
+              <span>↗</span>
+            </a>
+
+          </div>
+
+          <div class="col-lg-7">
+
+            <div class="independent-experience-card">
+
+              <div class="independent-card-header">
+
+                <div>
+                  <span class="experience-type">
+                    Ongoing
+                  </span>
+
+                  <h3>
+                    Independent Software Development
+                  </h3>
+                </div>
+
+                <span class="independent-date">
+                  2020 – Present
+                </span>
+
+              </div>
+
+              <p>
+                I started learning web development with HTML, CSS,
+                and JavaScript before progressing into frontend,
+                backend, databases, authentication, real-time
+                applications, and full-stack architecture.
+              </p>
+
+              <p>
+                Rather than learning technologies only in isolation,
+                I've tried to turn what I learn into working
+                applications — from smaller JavaScript and React
+                exercises to full-stack systems with authentication,
+                CRUD operations, APIs, databases, and real-time
+                communication.
+              </p>
+
+              <div class="development-areas">
+
+                <div class="development-area">
+                  <i class="bi bi-window"></i>
+
+                  <div>
+                    <strong>Frontend</strong>
+
+                    <span>
+                      React, Next.js, responsive interfaces,
+                      component architecture and state management.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="development-area">
+                  <i class="bi bi-server"></i>
+
+                  <div>
+                    <strong>Backend</strong>
+
+                    <span>
+                      Node.js, Express, Spring Boot, REST APIs,
+                      authentication and backend architecture.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="development-area">
+                  <i class="bi bi-database"></i>
+
+                  <div>
+                    <strong>Data</strong>
+
+                    <span>
+                      PostgreSQL, MySQL, MongoDB, SQLite and
+                      application data modelling.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="development-area">
+                  <i class="bi bi-boxes"></i>
+
+                  <div>
+                    <strong>Engineering</strong>
+
+                    <span>
+                      Git, Docker, CI/CD, Linux, testing,
+                      deployment and development workflows.
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <a
+                href="showcase.html"
+                class="experience-text-link"
+              >
+                See what I've built
+                <span>→</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CYBERSECURITY EXPERIENCE
+    ====================================================== -->
+
+    <section
+      id="security-experience"
+      class="experience-section security-experience-section"
+    >
+      <div class="container">
+
+        <div class="experience-section-heading security-heading">
+
+          <span class="experience-section-label">
+            Current Direction
+          </span>
+
+          <h2>
+            Cybersecurity & Application Security
+          </h2>
+
+          <p>
+            Expanding my software engineering foundation through
+            postgraduate study, security research, and hands-on
+            laboratory work.
+          </p>
+
+        </div>
+
+        <div class="row g-4">
+
+          <!-- STUDY -->
+
+          <div class="col-lg-4">
+
+            <article class="security-experience-card">
+
+              <div class="security-experience-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+
+              <span class="security-experience-category">
+                Postgraduate Study
+              </span>
+
+              <h3>
+                Master of Computing
+              </h3>
+
+              <p class="security-card-highlight">
+                Cyber Security
+              </p>
+
+              <p>
+                Currently completing postgraduate study in
+                Cyber Security at Curtin University in Perth,
+                developing deeper knowledge across offensive and
+                defensive security.
+              </p>
+
+              <div class="security-card-tags">
+                <span>Cybersecurity</span>
+                <span>Network Security</span>
+                <span>Web Security</span>
+              </div>
+
+            </article>
+
+          </div>
+
+          <!-- WAF -->
+
+          <div class="col-lg-4">
+
+            <article class="security-experience-card featured-security-exp">
+
+              <div class="security-experience-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+
+              <span class="security-experience-category">
+                Security Research
+              </span>
+
+              <h3>
+                Web Application Firewall Research
+              </h3>
+
+              <p>
+                Investigated and compared open-source Web Application
+                Firewalls using controlled attacks, custom testing
+                scripts, vulnerable applications, and WAF security
+                logs.
+              </p>
+
+              <div class="security-card-tags">
+                <span>ModSecurity</span>
+                <span>OWASP CRS</span>
+                <span>NAXSI</span>
+                <span>Coraza</span>
+              </div>
+
+            </article>
+
+          </div>
+
+          <!-- HANDS ON -->
+
+          <div class="col-lg-4">
+
+            <article class="security-experience-card">
+
+              <div class="security-experience-icon">
+                <i class="bi bi-terminal"></i>
+              </div>
+
+              <span class="security-experience-category">
+                Hands-On Labs
+              </span>
+
+              <h3>
+                Security Testing
+              </h3>
+
+              <p>
+                Working with isolated security labs and tools for web
+                application testing, vulnerability assessment,
+                traffic analysis, attack simulation, and defensive
+                analysis.
+              </p>
+
+              <div class="security-card-tags">
+                <span>Burp Suite</span>
+                <span>OWASP ZAP</span>
+                <span>Nmap</span>
+                <span>Wireshark</span>
+                <span>Kali Linux</span>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- RESEARCH FEATURE -->
+
+        <div class="security-research-highlight">
+
+          <div class="row align-items-center g-4">
+
+            <div class="col-lg-8">
+
+              <span class="research-label">
+                Current Security Focus
+              </span>
+
+              <h3>
+                Understanding both sides of application security.
+              </h3>
+
+              <p>
+                My software development background helps me
+                understand how applications are structured.
+                Cybersecurity is giving me the opportunity to examine
+                the same systems from an attack and defence
+                perspective — how vulnerabilities are discovered,
+                how security controls respond, and how software can
+                be designed more securely.
+              </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="security-focus-list">
+
+                <span>
+                  <i class="bi bi-check2"></i>
+                  Application Security
+                </span>
+
+                <span>
+                  <i class="bi bi-check2"></i>
+                  Vulnerability Assessment
+                </span>
+
+                <span>
+                  <i class="bi bi-check2"></i>
+                  Web Security Testing
+                </span>
+
+                <span>
+                  <i class="bi bi-check2"></i>
+                  Defensive Security
+                </span>
+
+                <span>
+                  <i class="bi bi-arrow-right"></i>
+                  Purple Teaming
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         EXPERIENCE PHILOSOPHY
+    ====================================================== -->
+
+    <section class="experience-philosophy">
+      <div class="container">
+
+        <div class="experience-philosophy-inner">
+
+          <span class="experience-section-label">
+            The Bigger Picture
+          </span>
+
+          <h2>
+            Development gave me the foundation.
+            Security is changing how I look at software.
+          </h2>
+
+          <p>
+            I don't see software engineering and cybersecurity as
+            completely separate paths. Understanding how software is
+            designed, implemented, and deployed provides useful
+            context for understanding where vulnerabilities come
+            from and how systems can be better protected.
+          </p>
+
+          <div class="experience-flow">
+
+            <span>
+              Build
+            </span>
+
+            <i class="bi bi-arrow-right"></i>
+
+            <span>
+              Understand
+            </span>
+
+            <i class="bi bi-arrow-right"></i>
+
+            <span>
+              Test
+            </span>
+
+            <i class="bi bi-arrow-right"></i>
+
+            <span>
+              Defend
+            </span>
+
+            <i class="bi bi-arrow-right"></i>
+
+            <strong>
+              Improve
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="experience-cta">
+      <div class="container">
+
+        <div class="experience-cta-inner">
+
+          <span class="experience-section-label">
+            What's Next?
+          </span>
+
+          <h2>
+            Looking for the next opportunity to build and learn.
+          </h2>
+
+          <p>
+            I'm interested in opportunities across software
+            engineering, full-stack development, cybersecurity,
+            and application security where I can contribute while
+            continuing to grow technically.
+          </p>
+
+          <div class="experience-cta-actions">
+
+            <a
+              href="showcase.html"
+              class="btn btn-light"
+            >
+              View My Projects
+            </a>
+
+            <a
+              href="contact.html"
+              class="btn btn-outline-light"
+            >
+              Contact Me
+            </a>
+
+            <a
+              href="myself.html"
+              class="btn btn-outline-light"
+            >
+              About Me
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="experience-footer">
+      <div class="container">
+
+        <div class="experience-footer-top">
+
           <a
-            href="https://github.com/Nabil-Shartaj-Khan?tab=repositories"
-            target="_blank"
-            >Github Repos.</a
+            href="#experience"
+            class="experience-footer-brand"
           >
-          I furthermore, created projects where I had to demonstrate and use
-          relevant skills, for example, CRUD, Login with JWT token, Database
-          operations etc.
-        </p>
-      </div>
+            Nabil<span>.</span>
+          </a>
 
-      <div class="two-exp py-3 px-4 shadow-lg">
-        <h2 class="text-dark">English to Bengali translator</h2>
-        <h5>March 2022-November 2023</h5>
-        <h6 class="text-success fs-5">Upwork</h6>
-        <p class="lead mt-2">
-          I joined UPWORK in search of testing my skills and also as my
-          side-hustle. I started working as a translator (Bengali to English and
-          vice versa) and also as a transcriptionist. As my reading, writing and
-          listening skills are good enough, I chose these two as my head start
-          job. Even though, it’s been a year only, I am sure of my skills and
-          I’ll make sure my client realized and realizes the same.
-        </p>
-      </div>
-    </div>
+          <p>
+            Full-Stack Software Engineering • Cybersecurity •
+            Application Security
+          </p>
 
-    <div class="container">
-      <footer class="py-2 my-2 d-grid pt-5 mt-5">
-        <hr />
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3 col-12">
+        </div>
+
+        <ul class="nav justify-content-center experience-footer-nav">
+
           <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="myself.html" class="nav-link px-2 text-muted">About me</a>
-          </li>
-          <li class="nav-item">
-            <a href="experience.html" class="nav-link px-2 text-muted"
-              >Experience</a
+            <a
+              href="index.html"
+              class="nav-link"
             >
+              Home
+            </a>
           </li>
+
           <li class="nav-item">
-            <a href="contact.html" class="nav-link px-2 text-muted"
-              >Contact me</a
+            <a
+              href="myself.html"
+              class="nav-link"
             >
+              About me
+            </a>
           </li>
+
           <li class="nav-item">
-            <a href="showcase.html" class="nav-link px-2 text-muted"
-              >Projects</a
+            <a
+              href="experience.html"
+              class="nav-link"
             >
+              Experience
+            </a>
           </li>
+
+          <li class="nav-item">
+            <a
+              href="contact.html"
+              class="nav-link"
+            >
+              Contact me
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="showcase.html"
+              class="nav-link"
+            >
+              Projects
+            </a>
+          </li>
+
         </ul>
-        <button class="btn btn-success col-12 col-md-2" id="back-to-top">
-          Back to top
-        </button>
-        <p class="text-center text-muted">© 2024 by Nabil Shartaj Khan</p>
-        <span id="access-date" class="text-center text-muted"
-          >Webpage access date:
-        </span>
-      </footer>
-    </div>
+
+        <div class="experience-footer-bottom">
+
+          <button
+            class="btn btn-outline-dark btn-sm"
+            id="back-to-top"
+            type="button"
+          >
+            ↑ Back to top
+          </button>
+
+          <p>
+            ©
+            <span id="copyright-year"></span>
+            Nabil Shartaj Khan
+          </p>
+
+          <span id="access-date">
+            Webpage access date:
+          </span>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script>
+
+      // Back to top
       document
         .getElementById("back-to-top")
         .addEventListener("click", function () {
+
           window.scrollTo({
             top: 0,
             behavior: "smooth",
           });
+
         });
 
+      // Dynamic copyright year
+      document.getElementById(
+        "copyright-year"
+      ).textContent =
+        new Date().getFullYear();
+
+      // Access date
       function formatDate(date) {
-        const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, "0");
-        const day = String(date.getDate()).padStart(2, "0");
-        let hours = date.getHours();
-        const minutes = String(date.getMinutes()).padStart(2, "0");
-        const seconds = String(date.getSeconds()).padStart(2, "0");
 
-        let period = "AM";
+        const year =
+          date.getFullYear();
 
-        if (hours >= 12) {
-          period = "PM";
-          hours = hours % 12 || 12;
-        }
+        const month =
+          String(
+            date.getMonth() + 1
+          ).padStart(2, "0");
+
+        const day =
+          String(
+            date.getDate()
+          ).padStart(2, "0");
+
+        let hours =
+          date.getHours();
+
+        const minutes =
+          String(
+            date.getMinutes()
+          ).padStart(2, "0");
+
+        const seconds =
+          String(
+            date.getSeconds()
+          ).padStart(2, "0");
+
+        const period =
+          hours >= 12
+            ? "PM"
+            : "AM";
+
+        hours =
+          hours % 12 || 12;
 
         return `${year}-${month}-${day} at ${hours}:${minutes}:${seconds} ${period}`;
+
       }
 
-      const currentDate = new Date();
+      document.getElementById(
+        "access-date"
+      ).textContent +=
+        " " + formatDate(new Date());
 
-      document.getElementById("access-date").textContent +=
-        formatDate(currentDate);
-    </script>
-    <script>
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
+      // Preloader
+      const loader =
+        document.getElementById(
+          "preloader"
+        );
+
+      window.addEventListener(
+        "load",
+        function () {
+
+          loader.style.display =
+            "none";
+
+        }
+      );
+
     </script>
 
+    <!-- IMPORTANT: Correct Bootstrap JS bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>

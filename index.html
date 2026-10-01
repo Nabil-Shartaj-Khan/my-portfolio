@@ -1,10 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
     <meta
       name="description"
-      content="Nabil - Full-Stack Web Developer & Cybersecurity Enthusiast | Expert in React, Next.js, Node.js, and more. View my projects and get in touch!"
+      content="Nabil Shartaj Khan — Full-Stack Software Engineer and Cyber Security master's student building modern web applications, backend systems, APIs, and secure software."
     />
 
     <meta
@@ -12,25 +15,41 @@
       content="K06pvHW2qF7pG88aUlJW0pW9dZ_HZ9aQIe1fQqno_Ro"
     />
 
+    <title>
+      Nabil Shartaj Khan | Full-Stack Software Engineer & Cybersecurity
+    </title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Standard Favicon -->
-    <link rel="icon" href="./assets/logo.png" type="image/png" sizes="32x32" />
 
-    <!-- Apple Touch Icon (iPhone, iPad, iPod) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      href="./assets/logo.png"
+      type="image/png"
+      sizes="32x32"
+    />
 
-    <!-- Android Chrome Icon (Android devices) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo.png"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -40,16 +59,25 @@
 
     <meta name="msapplication-TileImage" content="./assets/logo.png" />
     <meta name="msapplication-TileColor" content="#ffffff" />
+
+    <!-- Analytics -->
     <script async src="https://cdn.splitbee.io/sb.js"></script>
-    <title>Nabil - Full-Stack Web Developer Portfolio.</title>
   </head>
-  <body>
+
+  <body class="home-page">
+    <!-- Preloader -->
     <div id="preloader"></div>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand text-dark" href="#intro">My portfolio</a>
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top portfolio-navbar">
+      <div class="container">
+        <a class="navbar-brand text-dark" href="#intro">
+          Nabil<span class="brand-dot">.</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -61,22 +89,36 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse navbar-collapse justify-content-end pe-5"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#"
-                >Home</a
+              <a
+                class="nav-link active text-dark"
+                aria-current="page"
+                href="#intro"
               >
+                Home
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#skills">Technical Skills</a>
+              <a class="nav-link text-dark" href="#skills">
+                Technical Skills
+              </a>
             </li>
+
+
+
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#education">Education</a>
+              <a class="nav-link text-dark" href="#education">
+                Education
+              </a>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle text-dark"
@@ -87,26 +129,30 @@
               >
                 More Details
               </a>
-              <ul class="dropdown-menu">
+
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a class="dropdown-item text-dark" href="myself.html"
-                    >About myself</a
-                  >
+                  <a class="dropdown-item text-dark" href="myself.html">
+                    About myself
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="experience.html"
-                    >Experience</a
-                  >
+                  <a class="dropdown-item text-dark" href="experience.html">
+                    Experience
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="showcase.html"
-                    >Projects</a
-                  >
+                  <a class="dropdown-item text-dark" href="showcase.html">
+                    Projects
+                  </a>
                 </li>
+
                 <li>
-                  <a class="dropdown-item text-dark" href="contact.html"
-                    >Contact me</a
-                  >
+                  <a class="dropdown-item text-dark" href="contact.html">
+                    Contact me
+                  </a>
                 </li>
               </ul>
             </li>
@@ -115,148 +161,237 @@
       </div>
     </nav>
 
-    <section id="intro" class="bg-light">
-      <div class="container-lg py-5 pb-3 mt-3">
-        <div class="row justify-content-center">
-          <div class="col md-5 text-center text-md-center pt-5">
-            <h1>
-              <div
-                class="display-4 text-dark me-4"
-                style="font-family: Alegreya"
-              >
-                Hi, I am Nabil Shartaj Khan
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section id="intro">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Hero Content -->
+          <div class="col-lg-7">
+            <div class="hero-content">
+              <span class="hero-eyebrow">
+                👋 Hello, welcome to my portfolio
+              </span>
+
+              <h1 class="hero-title">
+                I'm Nabil<br />
+                <span>Shartaj Khan.</span>
+              </h1>
+
+              <div class="hero-role">
+                💻 Full-Stack Software Engineer
+                <span class="hero-role-divider">•</span>
+                <span class="hero-highlight">
+                  🛡️ Cybersecurity & Application Security
+                </span>
               </div>
-            </h1>
 
-            <p class="lead fs-5 my-4 fw-lighter">
-              I'm passionate about
-              <span class="text-success fw-bolder">developing websites </span>
-              that deliver real-world solutions.
-            </p>
-            <div class="p-3">
-              <a href="showcase.html" class="btn btn-outline-dark mx-2"
-                >My projects</a
-              >
+              <p class="hero-description">
+                I build full-stack web applications, backend systems, APIs,
+                and secure software. I'm currently completing a
+                <strong>Master of Computing (Cyber Security)</strong> at
+                <strong>Curtin University</strong>, expanding my software
+                engineering background into application security,
+                penetration testing, vulnerability assessment, and
+                defensive security.
+              </p>
 
-              <a href="myself.html" class="btn btn-outline-dark mx-3"
-                >About me</a
-              >
-              <a
-                href="https://drive.google.com/file/d/1wRyXUG0POkeQHxDVeQiJLhD_qHMm-LXR/view?usp=sharing"
-                class="btn btn-outline-dark mx-3 mt-3 mt-sm-0"
-                target="_blank"
-                >View Resume</a
-              >
+              <div class="hero-actions">
+                <a href="showcase.html" class="btn btn-dark">
+                  View My Projects
+                </a>
+
+                <a href="myself.html" class="btn btn-outline-dark">
+                  About Me
+                </a>
+
+                <a
+                  href="https://drive.google.com/file/d/1wRyXUG0POkeQHxDVeQiJLhD_qHMm-LXR/view?usp=sharing"
+                  class="btn btn-outline-success"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Resume
+                </a>
+              </div>
+
+              <p class="hero-note">
+                Software Engineering
+                <span>•</span>
+                Application Security
+                <span>•</span>
+                Secure Software Development
+              </p>
             </div>
           </div>
-          <div class="col md-5 text-center p-3 d-none d-md-block ms-5">
-            <img
-              class="img-fluid rounded-4"
-              src="../assets/HeroIntro.png"
-              style="
-                display: inline-flex;
-                height: 80%;
-                object-fit: cover;
-                border-radius: 30%;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-              "
-            />
+
+          <!-- Hero Image -->
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="hero-image-wrapper">
+              <img
+                class="hero-image"
+                src="../assets/HeroIntro.png"
+                alt="Nabil Shartaj Khan"
+              />
+
+              <div class="hero-floating-card">
+                <span class="status-dot"></span>
+
+                <div>
+                  <strong>Currently exploring</strong>
+                  <small>
+                    Purple Teaming • DFIR • Detection Engineering
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="scroll-indicator d-none d-lg-flex">
+          <span>Explore</span>
+          <span class="scroll-arrow">↓</span>
         </div>
       </div>
     </section>
-    <section id="education" class="bg-light">
-      <div class="container-lg">
-        <div class="text-center">
-          <h2 class="py-3 display-4 text-dark" style="font-family: Alegreya">
-            Educational Qualification
-          </h2>
-          <p class="lead pb-3">
-            I have completed my SSC, HSC and my undergraduation degree as well.
-            Currently, I am pursuing my masters in Australia. Below listed are
-            my educational qualifications till now-
+
+    <!-- =====================================================
+         TECHNICAL SKILLS
+    ====================================================== -->
+
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="text-center section-heading">
+          <p class="section-label">Technical Toolkit</p>
+
+          <h2 class="section-title">Skills & Expertise</h2>
+
+          <p class="section-description">
+            My core toolkit for building modern full-stack applications,
+            backend services, APIs, and production-ready software.
           </p>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-3">
-            <div
-              class="card border-2 shadow-lg"
-              style="display: flex; flex-direction: column; height: 100%"
-            >
-              <div class="card-body text-center py-4">
-                <a href="http://drmc.edu.bd/" target="_blank"
-                  ><img src="../assets/college.png" style="height: 100px"
-                /></a>
 
-                <h4 class="card-title fs-3 text-dark pt-3 mb-4">
-                  Secondary School Certificate
-                </h4>
-                <p class="lead text-dark mb-5">2014-2016</p>
-                <!-- <p class="lead text-dark">GPA-5.00</p> -->
-                <p class="lead text-dark"><b>Science</b></p>
-                <p class="text-dark fst-italic">Dhaka Board</p>
+        <div class="row g-4 mt-4">
+          <!-- Languages -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon">⌨️</div>
+
+              <h5>Languages</h5>
+
+              <div class="skill-tags">
+                <span>JavaScript (ES6+)</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>PHP</span>
+                <span>Bash</span>
+                <span>PowerShell</span>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-3">
-            <div
-              class="card border-2 shadow-lg"
-              style="display: flex; flex-direction: column; height: 100%"
-            >
-              <div class="card-body text-center py-4">
-                <a href="http://drmc.edu.bd/" target="_blank"
-                  ><img src="../assets/college.png" style="height: 100px"
-                /></a>
-                <h4 class="card-title fs-3 text-dark pt-3 mb-4">
-                  Higher Secondary School Certificate
-                </h4>
-                <p class="lead text-dark mb-5">2016-2019</p>
-                <!-- <p class="lead text-dark">GPA-4.85</p> -->
-                <p class="lead text-dark"><b>Science</b></p>
-                <p class="text-dark fst-italic">Dhaka Board</p>
+          <!-- Frontend -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon">🎨</div>
+
+              <h5>Frontend</h5>
+
+              <div class="skill-tags">
+                <span>React.js</span>
+                <span>Next.js</span>
+                <span>Redux</span>
+                <span>React Query</span>
+                <span>React Router</span>
+                <span>Tailwind CSS</span>
+                <span>Bootstrap</span>
+                <span>Material UI</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>PWA</span>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3">
-            <div
-              class="card border-2 shadow-lg"
-              style="display: flex; flex-direction: column; height: 100%"
-            >
-              <div class="card-body text-center py-3 pb-4">
-                <a href="https://www.bracu.ac.bd/" target="_blank"
-                  ><img src="../assets/bracu.png" style="height: 120px"
-                /></a>
-                <h4 class="card-title fs-3 text-dark pt-3">
-                  Bachelor of Science
-                </h4>
-                <p class="lead text-dark mb-5">2020-2024</p>
-                <!-- <p class="lead text-dark">CGPA-N/A</p> -->
-                <p class="lead text-dark"><b>Computer Science</b></p>
-                <p class="text-dark fst-italic">Dhaka, Bangladesh</p>
+
+          <!-- Backend -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon">⚙️</div>
+
+              <h5>Backend & APIs</h5>
+
+              <div class="skill-tags">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>Spring Boot</span>
+                <span>PHP</span>
+                <span>Socket.io</span>
+                <span>REST APIs</span>
+                <span>Microservices</span>
+                <span>JWT</span>
+                <span>OAuth 2.0</span>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3">
-            <div
-              class="card border-2 shadow-lg"
-              style="display: flex; flex-direction: column; height: 100%"
-            >
-              <div class="card-body text-center py-3 pb-4">
-                <a href="https://www.curtin.edu.au/" target="_blank">
-                  <img
-                    src="../assets/curtin.png"
-                    alt="Curtin University"
-                    style="width: 190px; height: 70px; margin-top: 20px"
-                  />
-                </a>
-                <h4 class="card-title fs-3 text-dark pt-5">
-                  Master of Computing
-                </h4>
-                <p class="lead text-dark mb-5">2025-2027</p>
-                <!-- <p class="lead text-dark">CGPA-N/A</p> -->
-                <p class="lead text-dark"><b>Cyber Security</b></p>
-                <p class="text-dark fst-italic">Perth, Australia</p>
+
+          <!-- Databases -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon">🗄️</div>
+
+              <h5>Databases</h5>
+
+              <div class="skill-tags">
+                <span>PostgreSQL</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DevOps -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon">🚀</div>
+
+              <h5>DevOps & Tools</h5>
+
+              <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>GitLab</span>
+                <span>Docker</span>
+                <span>GitHub Actions</span>
+                <span>GitLab CI/CD</span>
+                <span>Postman</span>
+                <span>Jira</span>
+                <span>Jest</span>
+                <span>Maven</span>
+                <span>Vercel</span>
+                <span>Linux</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secure Development -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon">🔐</div>
+
+              <h5>Secure Development</h5>
+
+              <div class="skill-tags">
+                <span>JWT</span>
+                <span>OAuth 2.0</span>
+                <span>Authentication</span>
+                <span>Authorization</span>
+                <span>CSRF Protection</span>
+                <span>Session Security</span>
+                <span>Secure APIs</span>
               </div>
             </div>
           </div>
@@ -264,213 +399,470 @@
       </div>
     </section>
 
-<section id="skills">
-  <div class="container my-5">
-    <div class="text-center mb-5">
-      <h3 class="display-4 text-dark" style="font-family: Alegreya">
-        Skills & Expertise
-      </h3>
-      <p class="lead text-dark">
-        I’m passionate about creating seamless web experiences. Here’s a
-        snapshot of my technical and soft skills:
-      </p>
-    </div>
+    <!-- =====================================================
+         CYBERSECURITY
+    ====================================================== -->
 
-    <div class="row g-4">
-      <!-- Languages Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">Languages</h5>
-          <ul class="list-unstyled">
-            <li>JavaScript (ES6+)</li>
-            <li>Java</li>
-            <li>Python</li>
-          </ul>
+    <section id="security" class="section-padding">
+      <div class="container">
+        <div class="text-center section-heading">
+          <p class="section-label">Security</p>
+
+          <h2 class="section-title">Learning Cybersecurity</h2>
+
+          <p class="section-description">
+            Building on my software engineering background through hands-on
+            work in application security, security testing, web application
+            defence, and vulnerability assessment.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- App Security -->
+          <div class="col-md-6">
+            <div class="security-card">
+              <div class="security-number">01</div>
+
+              <h5>🌐 Application & Web Security</h5>
+
+              <p>
+                Understanding how web applications are attacked, defended,
+                and built more securely.
+              </p>
+
+              <div>
+                <span class="security-tag">OWASP Top 10</span>
+                <span class="security-tag">Web Application Security</span>
+                <span class="security-tag">Open-Source WAFs</span>
+                <span class="security-tag">
+                  Secure Software Development
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testing -->
+          <div class="col-md-6">
+            <div class="security-card">
+              <div class="security-number">02</div>
+
+              <h5>⚔️ Security Testing</h5>
+
+              <p>
+                Hands-on security testing and analysis of applications,
+                HTTP traffic, vulnerabilities, and defensive controls.
+              </p>
+
+              <div>
+                <span class="security-tag">Penetration Testing</span>
+                <span class="security-tag">
+                  Vulnerability Assessment
+                </span>
+                <span class="security-tag">
+                  Web Application Security Testing
+                </span>
+                <span class="security-tag">Server-Side Attacks</span>
+                <span class="security-tag">Client-Side Attacks</span>
+                <span class="security-tag">HTTP Security Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="col-md-6">
+            <div class="security-card">
+              <div class="security-number">03</div>
+
+              <h5>🔍 Security Tools</h5>
+
+              <p>
+                Tools I have used across security labs, application
+                testing, traffic analysis, and vulnerability research.
+              </p>
+
+              <div>
+                <span class="security-tag">Burp Suite</span>
+                <span class="security-tag">OWASP ZAP</span>
+                <span class="security-tag">Nmap</span>
+                <span class="security-tag">SQLMap</span>
+                <span class="security-tag">Nikto</span>
+                <span class="security-tag">Wireshark</span>
+                <span class="security-tag">Kali Linux</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exploring -->
+          <div class="col-md-6">
+            <div class="security-card security-card-exploring">
+              <div class="security-number">04</div>
+
+              <h5>🟣 Currently Exploring</h5>
+
+              <p>
+                Areas I'm continuing to develop through study, research,
+                labs, and future security projects.
+              </p>
+
+              <div>
+                <span class="security-tag">Purple Teaming</span>
+                <span class="security-tag">Offensive Security</span>
+                <span class="security-tag">Defensive Security</span>
+                <span class="security-tag">Detection Engineering</span>
+                <span class="security-tag">DFIR</span>
+                <span class="security-tag">Intrusion Detection</span>
+                <span class="security-tag">Incident Response</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Frontend Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">Frontend</h5>
-          <ul class="list-unstyled">
-            <li>React.js, Next.js, Redux</li>
-            <li>Tailwind CSS, Bootstrap, Material UI</li>
-            <li>Pug.js</li>
-            <li>Progressive Web Apps (PWA)</li>
-            <li>Socket.io (client-side)</li>
-          </ul>
+    <!-- =====================================================
+         FEATURED SECURITY WORK
+    ====================================================== -->
+
+    <section id="featured-work" class="featured-work section-padding">
+      <div class="container">
+        <div class="text-center section-heading">
+          <p class="section-label">Featured Work</p>
+
+          <h2 class="section-title">Security Projects & Research</h2>
+
+          <p class="section-description">
+            Applying security concepts through hands-on research,
+            controlled lab environments, custom testing scripts, and
+            security-focused projects.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- WAF -->
+          <div class="col-lg-6">
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-icon">🛡️</span>
+                <span class="project-type">SECURITY RESEARCH</span>
+              </div>
+
+              <h3>Open-Source WAF Security Research</h3>
+
+              <p>
+                Conducted comparative security research on
+                <strong>open-source Web Application Firewalls</strong>
+                against common web application attacks.
+              </p>
+
+              <p>
+                Built custom <strong>Python and Bash</strong> security
+                testing scripts, analysed HTTP responses, security alerts,
+                and WAF behaviour, and compared detection and blocking
+                behaviour across multiple WAF implementations.
+              </p>
+
+              <div class="project-stack">
+                <span>Python</span>
+                <span>Bash</span>
+                <span>OWASP</span>
+                <span>Kali Linux</span>
+                <span>Ubuntu</span>
+                <span>Apache</span>
+                <span>DVWA</span>
+              </div>
+
+              <a href="showcase.html" class="project-link">
+                Explore my projects <span>→</span>
+              </a>
+            </article>
+          </div>
+
+          <!-- Purple Team -->
+          <div class="col-lg-6">
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-icon">🟣</span>
+                <span class="project-status">
+                  🚧 Planning & Development
+                </span>
+              </div>
+
+              <h3>End-to-End Purple Team Security Lab</h3>
+
+              <p>
+                Currently designing a hands-on Purple Team security lab
+                focused on understanding the complete
+                <strong>attack-to-detection-and-response lifecycle</strong>.
+              </p>
+
+              <p>
+                The planned environment will bring together offensive
+                testing, defensive monitoring, detection engineering,
+                forensic analysis, and incident response.
+              </p>
+
+              <div class="purple-flow">
+                <span>Penetration Testing</span>
+                <b>→</b>
+                <span>Network Monitoring</span>
+                <b>→</b>
+                <span>SIEM</span>
+                <b>→</b>
+                <span>Endpoint Detection</span>
+                <b>→</b>
+                <span>DFIR</span>
+                <b>→</b>
+                <span>Incident Response</span>
+              </div>
+
+              <a href="showcase.html" class="project-link">
+                Explore my projects <span>→</span>
+              </a>
+            </article>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Backend Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">Backend</h5>
-          <ul class="list-unstyled">
-            <li>Node.js, Express.js</li>
-            <li>PHP, Java Spring Boot</li>
-            <li>Socket.io (server-side)</li>
-            <li>REST APIs, CRUD Operations</li>
-            <li>Microservices Architecture</li>
-          </ul>
+    <!-- =====================================================
+         EDUCATION
+    ====================================================== -->
+
+    <section id="education" class="section-padding">
+      <div class="container">
+        <div class="text-center section-heading">
+          <p class="section-label">Academic Journey</p>
+
+          <h2 class="section-title">Education</h2>
+
+          <p class="section-description">
+            My academic background combines Computer Science and Cyber
+            Security, building on a foundation in software engineering
+            while expanding into application and defensive security.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- SSC -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="education-card">
+              <a
+                href="http://drmc.edu.bd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="education-logo-link"
+              >
+                <img
+                  src="../assets/college.png"
+                  class="education-logo"
+                  alt="Dhaka Residential Model College"
+                />
+              </a>
+
+              <p class="education-year">2014 — 2016</p>
+
+              <h4>Secondary School Certificate</h4>
+
+              <p class="education-field">Science</p>
+
+              <p class="education-location">Dhaka Board</p>
+            </div>
+          </div>
+
+          <!-- HSC -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="education-card">
+              <a
+                href="http://drmc.edu.bd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="education-logo-link"
+              >
+                <img
+                  src="../assets/college.png"
+                  class="education-logo"
+                  alt="Dhaka Residential Model College"
+                />
+              </a>
+
+              <p class="education-year">2016 — 2019</p>
+
+              <h4>Higher Secondary School Certificate</h4>
+
+              <p class="education-field">Science</p>
+
+              <p class="education-location">Dhaka Board</p>
+            </div>
+          </div>
+
+          <!-- Bachelor's -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="education-card">
+              <a
+                href="https://www.bracu.ac.bd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="education-logo-link"
+              >
+                <img
+                  src="../assets/bracu.png"
+                  class="education-logo"
+                  alt="BRAC University"
+                />
+              </a>
+
+              <p class="education-year">2020 — 2024</p>
+
+              <h4>Bachelor of Science</h4>
+
+              <p class="education-field">Computer Science</p>
+
+              <p class="education-location">Dhaka, Bangladesh</p>
+            </div>
+          </div>
+
+          <!-- Master's -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="education-card education-card-current">
+              <div class="current-badge">CURRENT</div>
+
+              <a
+                href="https://www.curtin.edu.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="education-logo-link"
+              >
+                <img
+                  src="../assets/curtin.png"
+                  class="education-logo curtin-logo"
+                  alt="Curtin University"
+                />
+              </a>
+
+              <p class="education-year">2025 — 2027</p>
+
+              <h4>Master of Computing</h4>
+
+              <p class="education-field">Cyber Security</p>
+
+              <p class="education-location">Perth, Australia</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Databases Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">Databases</h5>
-          <ul class="list-unstyled">
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-          </ul>
-        </div>
-      </div>
+    <!-- =====================================================
+         CONTACT CTA
+    ====================================================== -->
 
-      <!-- DevOps & Tools Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">DevOps & Tools</h5>
-          <ul class="list-unstyled">
-            <li>Git, GitHub, GitLab CI/CD</li>
-            <li>Postman</li>
-            <li>Vercel</li>
-            <li>Linux</li>
-            <li>Responsive Design</li>
-            <li>Web Hosting</li>
-          </ul>
-        </div>
-      </div>
+    <section class="home-contact-section">
+      <div class="container">
+        <p class="section-label">Let's Connect</p>
 
-      <!-- Security Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">Security</h5>
-          <ul class="list-unstyled">
-            <li>JWT</li>
-            <li>OAuth2</li>
-            <li>Passport.js</li>
-            <li>CSRF Protection</li>
-            <li>Session-Based Authentication</li>
-          </ul>
-        </div>
-      </div>
+        <h2>Interested in building something together?</h2>
 
-      <!-- Core Concepts Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">Core Concepts</h5>
-          <ul class="list-unstyled">
-            <li>REST APIs & CRUD operations</li>
-            <li>Microservices Architecture</li>
-            <li>Progressive Web Apps</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Soft Skills Card -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 p-4 border-0 rounded-4 skill-card">
-          <h5 class="text-center mb-3 fw-bold">Soft Skills</h5>
-          <ul class="list-unstyled">
-            <li>Collaborative & Adaptable Team Player</li>
-            <li>Leadership & Problem-Solving</li>
-            <li>Fast Typing & Efficient Communication</li>
-            <li>Microsoft Word, Excel, PowerPoint</li>
-            <li>Video Editing (Filmora)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <style>
-      .skill-card {
-        transition:
-          transform 0.3s,
-          box-shadow 0.3s;
-      }
-
-      .skill-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-      }
-
-      .skill-card h5 {
-        font-weight: 600;
-        color: #2b2b2b;
-      }
-
-      .skill-card ul li {
-        padding: 4px 0;
-        font-size: 1rem;
-        color: #4b4b4b;
-      }
-    </style>
-    <div class="contact-me-section shadow-lg">
-      <div class="mb-4">
-        <h2
-          class="py-4 display-2 text-success text-center"
-          style="font-family: Alegreya"
-        >
-          I am open for collaboration
-        </h2>
-        <p class="lead text-center py-1 fs-4">
-          Looking to collaborate? Let's create amazing web and software
-          solutions together!
+        <p>
+          I'm open to software engineering, cybersecurity, application
+          security, and open-source collaborations. If you're working on
+          something interesting, I'd be happy to hear about it.
         </p>
-      </div>
-      <div class="text-center">
-        <a href="contact.html"
-          ><button class="btn btn-outline-dark">Contact with me</button></a
-        >
-      </div>
-    </div>
 
-    <div class="container">
-      <footer class="py-2 my-2 d-grid mt-5 pt-5">
-        <hr />
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3 col-12">
+        <div class="contact-actions">
+          <a href="contact.html" class="btn btn-dark">
+            Contact Me
+          </a>
+
+          <a href="showcase.html" class="btn btn-outline-dark">
+            View Projects
+          </a>
+
+          <a href="experience.html" class="btn btn-outline-success">
+            My Experience
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="portfolio-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a class="footer-brand" href="#intro">
+            Nabil<span>.</span>
+          </a>
+
+          <p>
+            Full-Stack Software Engineering • Cybersecurity • Application
+            Security
+          </p>
+        </div>
+
+        <ul class="nav justify-content-center footer-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
           </li>
+
           <li class="nav-item">
-            <a href="myself.html" class="nav-link px-2 text-muted">About me</a>
+            <a href="myself.html" class="nav-link">
+              About me
+            </a>
           </li>
+
           <li class="nav-item">
-            <a href="experience.html" class="nav-link px-2 text-muted"
-              >Experience</a
-            >
+            <a href="experience.html" class="nav-link">
+              Experience
+            </a>
           </li>
+
           <li class="nav-item">
-            <a href="contact.html" class="nav-link px-2 text-muted"
-              >Contact me</a
-            >
+            <a href="contact.html" class="nav-link">
+              Contact me
+            </a>
           </li>
+
           <li class="nav-item">
-            <a href="showcase.html" class="nav-link px-2 text-muted"
-              >Projects</a
-            >
+            <a href="showcase.html" class="nav-link">
+              Projects
+            </a>
           </li>
         </ul>
-        <button class="btn btn-success col-2" id="back-to-top">
-          Back to top
-        </button>
 
-        <p class="text-center text-muted">© 2025 by Nabil Shartaj Khan</p>
-        <span id="access-date" class="text-center text-muted"
-          >Webpage access date:
-        </span>
-        <span id="update-date" class="text-center text-muted"
-          >Website last updated on: 04/04/2026
-        </span>
-      </footer>
-    </div>
+        <div class="footer-bottom">
+          <button
+            class="btn btn-outline-dark btn-sm"
+            id="back-to-top"
+            type="button"
+          >
+            ↑ Back to top
+          </button>
+
+          <p class="footer-copyright">
+            © <span id="copyright-year"></span> Nabil Shartaj Khan
+          </p>
+
+          <span id="access-date">
+            Webpage access date:
+          </span>
+
+          <span id="update-date">
+            Website last updated on: 04/04/2026
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script>
+      // Back to top
       document
         .getElementById("back-to-top")
         .addEventListener("click", function () {
@@ -480,11 +872,18 @@
           });
         });
 
+      // Current copyright year
+      document.getElementById("copyright-year").textContent =
+        new Date().getFullYear();
+
+      // Access date
       function formatDate(date) {
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, "0");
         const day = String(date.getDate()).padStart(2, "0");
+
         let hours = date.getHours();
+
         const minutes = String(date.getMinutes()).padStart(2, "0");
         const seconds = String(date.getSeconds()).padStart(2, "0");
 
@@ -492,8 +891,9 @@
 
         if (hours >= 12) {
           period = "PM";
-          hours = hours % 12 || 12;
         }
+
+        hours = hours % 12 || 12;
 
         return `${year}-${month}-${day} at ${hours}:${minutes}:${seconds} ${period}`;
       }
@@ -501,18 +901,28 @@
       const currentDate = new Date();
 
       document.getElementById("access-date").textContent +=
-        formatDate(currentDate);
-    </script>
-    <script>
-      var loader = document.getElementById("preloader");
+        " " + formatDate(currentDate);
+
+      // Preloader
+      const loader = document.getElementById("preloader");
+
       window.addEventListener("load", function () {
         loader.style.display = "none";
       });
     </script>
+
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      integrity="sha384-MrcW6MFYlczIaxO+RSD2mxpGYG9S0hUQKzE+0i7XG+7Vf+FQ8p3FjY2vK3Qf6F"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Fallback to your original verified Bootstrap script -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
   </body>
 </html>
